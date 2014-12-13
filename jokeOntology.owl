@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Declaration>
+        <Class IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AudioJoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Format"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageJoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextJoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VideoJoke"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAudioFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImageFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVideoFormat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#content"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isForAdults"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Animals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blonde"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CrossTheRoad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DarkHumor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dirty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#God"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Insults"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lawyer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LittleJohnny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LookingGood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManWomen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marriage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Money"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nationality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NewsAndPolitics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartyingAndBadBehavior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PickUpLines"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PoliceAndMilitary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PopCultureAndCelebrity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#School"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Technology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ThatIsGross"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TravelAndCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WalksIntoBar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YoMama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#avi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gif"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jpg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mp3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#png"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class IRI="#Format"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AudioJoke"/>
+        <Class IRI="#Joke"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#Format"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageJoke"/>
+        <Class IRI="#Joke"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextJoke"/>
+        <Class IRI="#Joke"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video"/>
+        <Class IRI="#Format"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VideoJoke"/>
+        <Class IRI="#Joke"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Animals"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Blonde"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Country"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#CrossTheRoad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#DarkHumor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Dirty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Doctor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Fat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Food"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#God"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Insults"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Kids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Lawyer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#LittleJohnny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#LookingGood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#ManWomen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Marriage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Money"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Nationality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#NewsAndPolitics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#PartyingAndBadBehavior"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#PickUpLines"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#PoliceAndMilitary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#PopCultureAndCelebrity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#School"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Sports"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Technology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#ThatIsGross"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#TravelAndCar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#WalksIntoBar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#Work"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#YoMama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Video"/>
+        <NamedIndividual IRI="#avi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Image"/>
+        <NamedIndividual IRI="#gif"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Image"/>
+        <NamedIndividual IRI="#jpg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Audio"/>
+        <NamedIndividual IRI="#mp3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Image"/>
+        <NamedIndividual IRI="#png"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAudioFormat"/>
+        <Class IRI="#AudioJoke"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <Class IRI="#Joke"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Joke"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasImageFormat"/>
+        <Class IRI="#ImageJoke"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVideoFormat"/>
+        <Class IRI="#VideoJoke"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAudioFormat"/>
+        <Class IRI="#Audio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasImageFormat"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVideoFormat"/>
+        <Class IRI="#Video"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#content"/>
+        <Class IRI="#TextJoke"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date"/>
+        <Class IRI="#Joke"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Joke"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isForAdults"/>
+        <Class IRI="#Joke"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#language"/>
+        <Class IRI="#Joke"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#Joke"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#content"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isForAdults"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#language"/>
+        <Datatype abbreviatedIRI="xsd:language"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

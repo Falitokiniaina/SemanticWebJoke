@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+<rdfsyn:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:movieontology2="http://www.movieontology.org/2009/11/09/movieontology.owl#"
+     xmlns:aka="http://vivoweb.org/ontology/aka#"
+     xmlns:movieontology="http://www.movieontology.org/2009/10/01/movieontology.owl#"
+     xmlns:clinic="http://www.example.org/schemas/clinic/"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:test="inn/"
+     xmlns:tag="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+     xmlns:ope="http://www.fitforall.gr/ope#"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:schema="http://schemas.talis.com/2005/address/schema#"
+     xmlns:story="http://www.example.org/story.owl#"
+     xmlns:page="http://dbpedia.org/page/"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:vin="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"
+     xmlns:vivoc="http://vivo.library.cornell.edu/ns/0.1#"
+     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:c4o="http://purl.org/spar/c4o/"
+     xmlns:config="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#"
+     xmlns:cce="http://vivoweb.org/ontology/cornell-cooperative-extension#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+     xmlns:lom="http://ltsc.ieee.org/xsd/LOM/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:aktp="http://www.aktors.org/ontology/portal#"
+     xmlns:maths="http://vocab.arvida.de/2014/03/maths/vocab#"
+     xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:myext="http://example.com/my-extensions"
+     xmlns:stars="http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:iso11179-3e3="http://constellation.jhuapl.edu/iso11179-3e3.owl#"
+     xmlns:mann="http://vivo.cornell.edu/ns/mannadditions/0.1#"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:scires="http://vivoweb.org/ontology/scientific-research#"
+     xmlns:exergame-gamecontroller="http://www.fitforall.gr/ontology/exergame-gamecontroller#"
+     xmlns:org="http://www.w3.org/ns/org/"
+     xmlns:mpeg7="http://rhizomik.net/ontologies/2005/03/Mpeg7-2001.owl#"
+     xmlns:map="http://www.w3c.rl.ac.uk/2003/11/21-skos-mapping#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/sparsha/ontologies/2014/10/untitled-ontology-8#"
+     xmlns:vivo="http://vivoweb.org/ontology/core#"
+     xmlns:ocresd="http://purl.org/net/OCRe/study_design.owl#"
+     xmlns:ex="http://example.org/stuff/1.0/"
+     xmlns:app="http://eagle-i.org/ont/app/1.0/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
+     xmlns:spatial="http://vocab.arvida.de/2014/03/spatial/vocab#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:a="http://protege.stanford.edu/system#"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:ospcu="http://vivoweb.org/ontology/cu-vivo-osp#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:acti="http://vivoweb.org/ontology/activity-insight#"
+     xmlns:eg="urn:x-hp:eg/"
+     xmlns:exergame-sitetype="http://www.fitforall.gr/ontology/exergame-sitetype#"
+     xmlns:ocrer="http://purl.org/net/OCRe/research.owl#"
+     xmlns:tw="http://tw.rpi.edu/schema/"
+     xmlns:wped="http://en.wikipedia.org/wiki/"
+     xmlns:sio="http://semanticscience.org/resource/"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:sumo="http://stuarthendren.net/resource/sumodlfull.owl#"
+     xmlns:xref="http://id.crossref.org/contributor/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:vitro-public="http://vitro.mannlib.cornell.edu/ns/vitro/public#"
+     xmlns:dspace-ont="http://swig.hpclab.ceid.upatras.gr/dspace-ont/"
+     xmlns:y="http://www.yovisto.com/resource/"
+     xmlns:exergame-metric="http://www.fitforall.gr/ontology/exergame-metric#"
+     xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
+     xmlns:exergame="http://www.fitforall.gr/ontology/exergame#"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
+     xmlns:wcmc="http://weill.cornell.edu/vivo/ontology/wcmc#"
+     xmlns:family_example="https://wiki.csc.calpoly.edu/OntologyTutorial/family_example.owl#"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:kb="http://protege.stanford.edu/kb#"
+     xmlns:faldo="http://biohackathon.org/resource/faldo#"
+     xmlns:sbmed="http://vivo.stonybrookmedicine.edu/ontology/core#"
+     xmlns:dcelem="http://purl.org/dc/elements/1.1/"
+     xmlns:gcis="http://data.globalchange.gov/gcis.owl#"
+     xmlns:onto="http://137.208.51.84:5000/owl/2014_11_03+19%3A20%3A26+nahost_spectral_brute_limit_50_crowdflower%2F3#"
+     xmlns:db="http://ex.com/owl2/families#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:status="http://purl.org/ontology/bibo/status/"
+     xmlns:OWLSchemaPisco="https://code.google.com/p/igc-pucp/source/browse/trunk/owl/OWLSchemaPisco.owl#"
+     xmlns:literature="http://www.ida.liu.se/~almhe/SecurityLiterature.owl#"
+     xmlns:j.1="http://semanticdesktop/ontology#"
+     xmlns:far="http://vitro.mannlib.cornell.edu/ns/reporting#"
+     xmlns:j.3="http://www.opengis.net/ont/geosparql#"
+     xmlns:display="http://vitro.mannlib.cornell.edu/ontologies/display/1.1#"
+     xmlns:gfvo="http://www.biointerchange.org/gfvo#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:j.2="http://inspire.jrc.ec.europa.eu/schemas/base/3.2/"
+     xmlns:fam="http://a.com/ontology#"
+     xmlns:investopedia="http://protege.stanford.edu/investopedia#"
+     xmlns:exergame-exercise="http://www.fitforall.gr/ontology/exergame-exercise#"
+     xmlns:sweet="http://sweet.jpl.nasa.gov/2.3/sweetAll.owl#"
+     xmlns:sce="http://vivoweb.org/ontology/SchoolOfContinuingEducation#"
+     xmlns:food="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:socsci="http://vivo.library.cornell.edu/ns/vivo/socsci/0.1#"
+     xmlns:rdfsyn="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-19="http://www.semanticweb.org/jkrammer/ontologies/2014/3/untitled-ontology-19#"
+     xmlns:fma="http://purl.obolibrary.org/obo/fma#"
+     xmlns:this="http://ontovibe.visualdataweb.org/1.0#"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:hr="http://vivo.cornell.edu/ns/hr/0.9/hr.owl#"
+     xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+     xmlns:other="http://ontovibe.visualdataweb.org/1.0/imported#"
+     xmlns:paper="http://www.icecoolfire.com#"
+     xmlns:scirr="http://vivoweb.org/ontology/scientific-research-resource#"
+     xmlns:www="http://www.movieontology.org/2009/11/09/"
+     xmlns:pubmed="http://vitro.mannlib.cornell.edu/ns/pubmed#"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
+     xmlns:vom="http://vocab.arvida.de/2014/03/vom/vocab#"
+     xmlns:wos="http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#"
+     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:acfoo="http://acme.example.com/foo"
+     xmlns:camera="http://www.xfront.com/owl/ontologies/camera/#"
+     xmlns:resource="http://dbpedia.org/resource/"
+     xmlns:degrees="http://purl.org/ontology/bibo/degrees/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:ns1="http://art.uniroma2.it/ontologies/vocbench#"
+     xmlns:owl_time="http://www.w3.org/2006/time#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/"
+     xmlns:skos2="http://www.w3.org/2008/05/skos#"
+     xmlns:ns0="http://aims.fao.org/aos/agrontology#"
+     xmlns:bevon="http://rdfs.co/bevon/"
+     xmlns:twi="http://tw.rpi.edu/instances/"
+     xmlns:local="http://vivo.cornell.edu/ontology/local#"
+     xmlns:dsd="http://people.lis.illinois.edu/~ddubin/resource/example/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <Ontology rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8">
+        <imports rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasAudioFormat -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasAudioFormat">
+        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Audio"/>
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#AudioJoke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasAuthor -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasAuthor">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasGenre -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasGenre">
+        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasImageFormat -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasImageFormat">
+        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image"/>
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ImageJoke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasVideoFormat -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasVideoFormat">
+        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Video"/>
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#VideoJoke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#content -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#content">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#date -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#date">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#description -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#description">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#isForAdults -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#isForAdults">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#language -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#language">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#url -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#url">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Audio -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Audio">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#AudioJoke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#AudioJoke">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ImageJoke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ImageJoke">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Video -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Video">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#VideoJoke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#VideoJoke">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Animals -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Animals">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Blonde -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Blonde">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Country -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Country">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#CrossTheRoad -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#CrossTheRoad">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#DarkHumor -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#DarkHumor">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Dirty -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Dirty">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Doctor -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Doctor">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Fat -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Fat">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Food -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Food">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#God -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#God">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Insults -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Insults">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Kids -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Kids">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Lawyer -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Lawyer">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LittleJohnny -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LittleJohnny">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LookingGood -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LookingGood">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ManWomen -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ManWomen">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Marriage -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Marriage">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Money -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Money">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Nationality -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Nationality">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#NewsAndPolitics -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#NewsAndPolitics">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PartyingAndBadBehavior -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PartyingAndBadBehavior">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PickUpLines -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PickUpLines">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PoliceAndMilitary -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PoliceAndMilitary">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PopCultureAndCelebrity -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PopCultureAndCelebrity">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#School -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#School">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Sports -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Sports">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Technology -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Technology">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ThatIsGross -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ThatIsGross">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TravelAndCar -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TravelAndCar">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#WalksIntoBar -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#WalksIntoBar">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Work -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Work">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#YoMama -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#YoMama">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#avi -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#avi">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Video"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#gif -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#gif">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jpg -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jpg">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#mp3 -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#mp3">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Audio"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#png -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#png">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image"/>
+    </NamedIndividual>
+</rdfsyn:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net -->
