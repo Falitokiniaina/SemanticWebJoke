@@ -16,7 +16,7 @@
  */
 
 //package edu.uci.ics.crawler4j.examples.basic;
-package jokes_mining;
+package jokesMiningCrawler;
 
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
@@ -116,7 +116,7 @@ public class BasicCrawlerController {
      * Start the crawl. This is a blocking operation, meaning that your code
      * will reach the line after this only when crawling is finished.
      */
-    controller.start(jokes_mining.BasicCrawler.class, numberOfCrawlers);
+    controller.start(jokesMiningCrawler.BasicCrawler.class, numberOfCrawlers);
   }
 }
 
