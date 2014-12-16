@@ -22,7 +22,7 @@ public class TestJoke {
 		// create the base model
 
 		OntModel model = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM );
-		model.read( "jokeOntology_rdf.owl", "RDF/XML" );
+		model.read( "jokeOntology_rdf.owl", "TURTLE" );
 		
 		//Jena: Listing All Classes And Instances In A Jena Ontology Model
 		ExtendedIterator classes = model.listClasses();
@@ -43,6 +43,41 @@ public class TestJoke {
 		} catch(Exception e) {}
 		model.writeAll(output, "TURTLE");
 		
+		/*
+		 * 		ExtendedIterator classes = model.listClasses();
+		String textJokeClass = "";
+		while (classes.hasNext()){		
+			OntClass thisClass = (OntClass) classes.next();		
+			if(thisClass.toString().endsWith("#TextJoke"))
+				textJokeClass = thisClass.toString();
+		}		
+				
+		String NS[] = textJokeClass.split("#TextJoke");
+		System.out.println(NS[0]);
+		OntClass textJokeRes = model.getOntClass(textJokeClass);
+		OntProperty nameProp = model.getOntProperty(NS[0]+"#jokeName");
+		OntProperty descProp = model.getOntProperty(NS[0]+"#description");
+		OntProperty contentProp = model.getOntProperty(NS[0]+"#content");
+		OntProperty urlProp = model.getOntProperty(NS[0]+"#url");
+		
+		System.out.println(nameProp);
+		
+		textJokeRes.createIndividual(NS[0]+"#joke1")
+				.addProperty(nameProp, "testName") 
+			    .addProperty(descProp, "testDescrip")   
+			    .addProperty(contentProp, "testContent")
+			    .addProperty(urlProp, "testURL"); 		
+		
+		FileOutputStream output = null;
+		try  {
+		  output = new FileOutputStream( "new_owl.owl");     
+		} catch(Exception e) {}
+		model.writeAll(output, "TURTLE");	
+		 * 
+		 */
+		
+	
+								
 		System.out.println("here");
 	}
 }

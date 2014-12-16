@@ -1,0 +1,2126 @@
+<?xml version="1.0"?>
+<rdfsyn:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:clinic="http://www.example.org/schemas/clinic/"
+     xmlns:movieontology="http://www.movieontology.org/2009/10/01/movieontology.owl#"
+     xmlns:aka="http://vivoweb.org/ontology/aka#"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:schema="http://schemas.talis.com/2005/address/schema#"
+     xmlns:plandesc="http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#"
+     xmlns:story="http://www.example.org/story.owl#"
+     xmlns:computable="http://ias.cs.tum.edu/kb/computable.owl#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:onyx="http://www.gsi.dit.upm.es/ontologies/onyx/ns#"
+     xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+     xmlns:lom="http://ltsc.ieee.org/xsd/LOM/"
+     xmlns:aktp="http://www.aktors.org/ontology/portal#"
+     xmlns:maths="http://vocab.arvida.de/2014/03/maths/vocab#"
+     xmlns:myext="http://example.com/my-extensions"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:iso11179-3e3="http://constellation.jhuapl.edu/iso11179-3e3.owl#"
+     xmlns:exergame-gamecontroller="http://www.fitforall.gr/ontology/exergame-gamecontroller#"
+     xmlns:meta="http://www.ontologydesignpatterns.org/schemas/meta.owl#"
+     xmlns:musometa="http://www.yso.fi/onto/muso-meta/"
+     xmlns:map="http://www.w3c.rl.ac.uk/2003/11/21-skos-mapping#"
+     xmlns:vivo="http://vivoweb.org/ontology/core#"
+     xmlns:ex="http://example.org/stuff/1.0/"
+     xmlns:ocresd="http://purl.org/net/OCRe/study_design.owl#"
+     xmlns:merometa="http://www.yso.fi/onto/mero-meta/"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:a="http://protege.stanford.edu/system#"
+     xmlns:yso="http://www.yso.fi/onto/yso/"
+     xmlns:sit="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#"
+     xmlns:acti="http://vivoweb.org/ontology/activity-insight#"
+     xmlns:eg="urn:x-hp:eg/"
+     xmlns:tw="http://tw.rpi.edu/schema/"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:sio="http://semanticscience.org/resource/"
+     xmlns:xref="http://id.crossref.org/contributor/"
+     xmlns:sumo="http://stuarthendren.net/resource/sumodlfull.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ysa="http://www.yso.fi/onto/ysa/"
+     xmlns:vitro-public="http://vitro.mannlib.cornell.edu/ns/vitro/public#"
+     xmlns:dspace-ont="http://swig.hpclab.ceid.upatras.gr/dspace-ont/"
+     xmlns:part="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
+     xmlns:y="http://www.yovisto.com/resource/"
+     xmlns:liitometa="http://www.yso.fi/onto/liito-meta/"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
+     xmlns:wcmc="http://weill.cornell.edu/vivo/ontology/wcmc#"
+     xmlns:family_example="https://wiki.csc.calpoly.edu/OntologyTutorial/family_example.owl#"
+     xmlns:ysokehitys="http://www.yso.fi/onto/yso-kehitys/"
+     xmlns:maometa="http://www.yso.fi/onto/mao-meta/"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:planex="http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#"
+     xmlns:sbmed="http://vivo.stonybrookmedicine.edu/ontology/core#"
+     xmlns:db="http://ex.com/owl2/families#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:OWLSchemaPisco="https://code.google.com/p/igc-pucp/source/browse/trunk/owl/OWLSchemaPisco.owl#"
+     xmlns:far="http://vitro.mannlib.cornell.edu/ns/reporting#"
+     xmlns:sf="http://sourceforge.net/api/sfelements.rdf#"
+     xmlns:display="http://vitro.mannlib.cornell.edu/ontologies/display/1.1#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:owlapi="http://www.semanticweb.org/owlapi#"
+     xmlns:fam="http://a.com/ontology#"
+     xmlns:investopedia="http://protege.stanford.edu/investopedia#"
+     xmlns:sweet="http://sweet.jpl.nasa.gov/2.3/sweetAll.owl#"
+     xmlns:sce="http://vivoweb.org/ontology/SchoolOfContinuingEducation#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdfsyn="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-19="http://www.semanticweb.org/jkrammer/ontologies/2014/3/untitled-ontology-19#"
+     xmlns:ktometa="http://www.yso.fi/onto/kto-meta/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:scirr="http://vivoweb.org/ontology/scientific-research-resource#"
+     xmlns:www="http://www.movieontology.org/2009/11/09/"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:ysotranslate="http://www.yso.fi/onto/yso-translate/"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
+     xmlns:cflow="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#"
+     xmlns:isothes="http://purl.org/iso25964/skos-thes#"
+     xmlns:camera="http://www.xfront.com/owl/ontologies/camera/#"
+     xmlns:kito="http://www.yso.fi/onto/kito/"
+     xmlns:ns1="http://art.uniroma2.it/ontologies/vocbench#"
+     xmlns:skos2="http://www.w3.org/2008/05/skos#"
+     xmlns:ns0="http://aims.fao.org/aos/agrontology#"
+     xmlns:seq="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"
+     xmlns:provdc="http://www.w3.org/ns/prov-dc#"
+     xmlns:kulometa="http://www.yso.fi/onto/kulo-meta/"
+     xmlns:tisit="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
+     xmlns:dsd="http://people.lis.illinois.edu/~ddubin/resource/example/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:juhometa="http://www.yso.fi/onto/juho-meta/"
+     xmlns:pwo="http://purl.org/spar/pwo/"
+     xmlns:movieontology2="http://www.movieontology.org/2009/11/09/movieontology.owl#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:test="inn/"
+     xmlns:tag="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+     xmlns:geon="http://sws.geonames.org/"
+     xmlns:ope="http://www.fitforall.gr/ope#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:skosext="http://purl.org/finnonto/schema/skosext#"
+     xmlns:page="http://dbpedia.org/page/"
+     xmlns:vin="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"
+     xmlns:om="http://www.yso.fi/onto/yso/peilaus/2007-03-02/"
+     xmlns:vivoc="http://vivo.library.cornell.edu/ns/0.1#"
+     xmlns:c4o="http://purl.org/spar/c4o/"
+     xmlns:config="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#"
+     xmlns:cce="http://vivoweb.org/ontology/cornell-cooperative-extension#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:geosp="http://www.opengis.net/ont/geosparql/"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:kaunometa="http://www.yso.fi/onto/kauno-meta/"
+     xmlns:stars="http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#"
+     xmlns:mann="http://vivo.cornell.edu/ns/mannadditions/0.1#"
+     xmlns:ysoupdate="http://www.yso.fi/onto/yso-update/"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:scires="http://vivoweb.org/ontology/scientific-research#"
+     xmlns:tsrmeta="http://www.yso.fi/onto/tsr-meta/"
+     xmlns:org="http://www.w3.org/ns/org/"
+     xmlns:mpeg7="http://rhizomik.net/ontologies/2005/03/Mpeg7-2001.owl#"
+     xmlns:taometa="http://www.yso.fi/onto/tao-meta/"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/sparsha/ontologies/2014/10/untitled-ontology-8#"
+     xmlns:app="http://eagle-i.org/ont/app/1.0/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
+     xmlns:spatial="http://vocab.arvida.de/2014/03/spatial/vocab#"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:kito-meta="http://www.yso.fi/onto/kito-meta/"
+     xmlns:jupometa="http://www.yso.fi/onto/jupo-meta/"
+     xmlns:ospcu="http://vivoweb.org/ontology/cu-vivo-osp#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:exergame-sitetype="http://www.fitforall.gr/ontology/exergame-sitetype#"
+     xmlns:ocrer="http://purl.org/net/OCRe/research.owl#"
+     xmlns:wped="http://en.wikipedia.org/wiki/"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:yso-meta="http://www.yso.fi/onto/yso-meta/2007-03-02/"
+     xmlns:exergame-metric="http://www.fitforall.gr/ontology/exergame-metric#"
+     xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
+     xmlns:exergame="http://www.fitforall.gr/ontology/exergame#"
+     xmlns:untitled-ontology-82="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#"
+     xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
+     xmlns:kb="http://protege.stanford.edu/kb#"
+     xmlns:faldo="http://biohackathon.org/resource/faldo#"
+     xmlns:puhometa="http://www.yso.fi/onto/puho-meta/"
+     xmlns:dcelem="http://purl.org/dc/elements/1.1/"
+     xmlns:gcis="http://data.globalchange.gov/gcis.owl#"
+     xmlns:onto="http://137.208.51.84:5000/owl/2014_11_03+19%3A20%3A26+nahost_spectral_brute_limit_50_crowdflower%2F3#"
+     xmlns:status="http://purl.org/ontology/bibo/status/"
+     xmlns:j.1="http://semanticdesktop/ontology#"
+     xmlns:literature="http://www.ida.liu.se/~almhe/SecurityLiterature.owl#"
+     xmlns:j.0="http://www.owl-ontologies.com/turismo.owl#"
+     xmlns:gfvo="http://www.biointerchange.org/gfvo#"
+     xmlns:j.3="http://www.opengis.net/ont/geosparql#"
+     xmlns:j.2="http://inspire.jrc.ec.europa.eu/schemas/base/3.2/"
+     xmlns:exergame-exercise="http://www.fitforall.gr/ontology/exergame-exercise#"
+     xmlns:food="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#"
+     xmlns:pizza="http://www.co-ode.org/ontologies/pizza/pizza.owl#"
+     xmlns:socsci="http://vivo.library.cornell.edu/ns/vivo/socsci/0.1#"
+     xmlns:fma="http://purl.obolibrary.org/obo/fma#"
+     xmlns:this="http://ontovibe.visualdataweb.org/1.0#"
+     xmlns:hr="http://vivo.cornell.edu/ns/hr/0.9/hr.owl#"
+     xmlns:other="http://ontovibe.visualdataweb.org/1.0/imported#"
+     xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+     xmlns:taskex="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#"
+     xmlns:paper="http://www.icecoolfire.com#"
+     xmlns:pubmed="http://vitro.mannlib.cornell.edu/ns/pubmed#"
+     xmlns:knowrob="http://ias.cs.tum.edu/kb/knowrob.owl#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vom="http://vocab.arvida.de/2014/03/vom/vocab#"
+     xmlns:wos="http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#"
+     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:timeint="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+     xmlns:valometa="http://www.yso.fi/onto/valo-meta/"
+     xmlns:error="http://www.essepuntato.it/2009/10/error/"
+     xmlns:acfoo="http://acme.example.com/foo"
+     xmlns:resource="http://dbpedia.org/resource/"
+     xmlns:degrees="http://purl.org/ontology/bibo/degrees/"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:kauno="http://www.yso.fi/onto/kauno/"
+     xmlns:owl_time="http://www.w3.org/2006/time#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/"
+     xmlns:afometa="http://www.yso.fi/onto/afo-meta/"
+     xmlns:bevon="http://rdfs.co/bevon/"
+     xmlns:local="http://vivo.cornell.edu/ontology/local#"
+     xmlns:twi="http://tw.rpi.edu/instances/"
+     xmlns:act="http://pervasive.semanticweb.org/ont/action#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <Ontology rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8">
+        <dcelem:description>The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.</dcelem:description>
+        <dcelem:title>Friend of a Friend (FOAF) vocabulary</dcelem:title>
+        <imports rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/membershipClass -->
+
+    <AnnotationProperty rdfsyn:about="http://xmlns.com/foaf/0.1/membershipClass">
+        <rdfs:label>membershipClass</rdfs:label>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment>Indicates the class of individuals that are a member of a Group</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <rdfsyn:Description rdfsyn:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:label>name</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A name for some thing.</rdfs:comment>
+        <rdfs:subPropertyOf rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </rdfsyn:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasAudioFormat -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasAudioFormat">
+        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Audio"/>
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#AudioJoke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasAuthor -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasAuthor">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasGenre -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasGenre">
+        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasImageFormat -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasImageFormat">
+        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image"/>
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ImageJoke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasVideoFormat -->
+
+    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#hasVideoFormat">
+        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Video"/>
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#VideoJoke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/account -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/account">
+        <rdfs:label>account</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>Indicates an account held by this agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/accountServiceHomepage -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/accountServiceHomepage">
+        <rdfs:label>account service homepage</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>Indicates a homepage of the service provide for this online account.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/aimChatID -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/aimChatID">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>AIM chat ID</rdfs:label>
+        <rdfs:comment>An AIM chat ID</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/based_near -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/based_near">
+        <rdfs:label>based near</rdfs:label>
+        <rdfs:comment>A location that something is based near, for some broadly human notion of near.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/currentProject -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/currentProject">
+        <rdfs:label>current project</rdfs:label>
+        <rdfs:comment>A current project this person works on.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/depiction">
+        <rdfs:label>depiction</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A depiction of some thing.</rdfs:comment>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <inverseOf rdfsyn:resource="http://xmlns.com/foaf/0.1/depicts"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depicts -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/depicts">
+        <rdfs:label>depicts</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A thing depicted in this representation.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Image"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/focus -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/focus">
+        <rdfs:label>focus</rdfs:label>
+        <rdfs:comment>The underlying or &apos;focal&apos; entity associated with some SKOS-described concept.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/fundedBy -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/fundedBy">
+        <rdfs:label>funded by</rdfs:label>
+        <swvs:term_status>archaic</swvs:term_status>
+        <rdfs:comment>An organization funding a project or person.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/holdsAccount -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/holdsAccount">
+        <rdfs:label>account</rdfs:label>
+        <rdfs:comment>Indicates an account held by this agent.</rdfs:comment>
+        <swvs:term_status>archaic</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/homepage">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>homepage</rdfs:label>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>A homepage for some thing.</rdfs:comment>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/page"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/icqChatID -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/icqChatID">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>ICQ chat ID</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>An ICQ chat ID</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/img -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/img">
+        <rdfs:label>image</rdfs:label>
+        <rdfs:comment>An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one&apos;s photo on a homepage).</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/depiction"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/interest -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/interest">
+        <rdfs:label>interest</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A page about a topic of interest to this person.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/isPrimaryTopicOf -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>is primary topic of</rdfs:label>
+        <rdfs:comment>A document that this thing is the primary topic of.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/page"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/jabberID -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/jabberID">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>jabber ID</rdfs:label>
+        <rdfs:comment>A jabber ID for something.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/knows -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/knows">
+        <rdfs:label>knows</rdfs:label>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>A person known by this person (indicating some level of reciprocated interaction between the parties).</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/logo">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>logo</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A logo representing some thing.</rdfs:comment>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/made -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/made">
+        <rdfs:label>made</rdfs:label>
+        <rdfs:comment>Something that was made by this agent.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/maker">
+        <rdfs:label>maker</rdfs:label>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>An agent that made this thing.</rdfs:comment>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <inverseOf rdfsyn:resource="http://xmlns.com/foaf/0.1/made"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/mbox">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>personal mailbox</rdfs:label>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a &apos;static inverse functional property&apos;, in that there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox_sha1sum -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/mbox_sha1sum">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>sha1sum of a personal mailbox URI name</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the first owner of the mailbox.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/member">
+        <rdfs:label>member</rdfs:label>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>Indicates a member of a Group</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Group"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/msnChatID -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/msnChatID">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>MSN chat ID</rdfs:label>
+        <rdfs:comment>An MSN chat ID</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/openid -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/openid">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>openid</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>An OpenID for an Agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/page -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/page">
+        <rdfs:label>page</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A page or document about this thing.</rdfs:comment>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <inverseOf rdfsyn:resource="http://xmlns.com/foaf/0.1/topic"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/pastProject -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/pastProject">
+        <rdfs:label>past project</rdfs:label>
+        <rdfs:comment>A project this person has previously worked on.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/phone -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/phone">
+        <rdfs:label>phone</rdfs:label>
+        <rdfs:comment>A phone, specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel).</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/primaryTopic">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>primary topic</rdfs:label>
+        <rdfs:comment>The primary topic of some page or document.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <inverseOf rdfsyn:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/publications -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/publications">
+        <rdfs:label>publications</rdfs:label>
+        <rdfs:comment>A link to the publications of this person.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/schoolHomepage -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/schoolHomepage">
+        <rdfs:label>schoolHomepage</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A homepage of a school attended by the person.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/theme -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/theme">
+        <rdfs:label>theme</rdfs:label>
+        <swvs:term_status>archaic</swvs:term_status>
+        <rdfs:comment>A theme.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/thumbnail -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/thumbnail">
+        <rdfs:label>thumbnail</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A derived thumbnail image.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Image"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/tipjar -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/tipjar">
+        <rdfs:label>tipjar</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A tipjar document for this agent, describing means for payment and reward.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/page"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/topic -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/topic">
+        <rdfs:label>topic</rdfs:label>
+        <rdfs:comment>A topic of some page or document.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/topic_interest -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/topic_interest">
+        <rdfs:label>topic_interest</rdfs:label>
+        <rdfs:comment>A thing of interest to this person.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/weblog -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/weblog">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>weblog</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A weblog of some thing (whether person, group, company etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/page"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/workInfoHomepage -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/workInfoHomepage">
+        <rdfs:label>work info homepage</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A work info homepage of some person; a page about their work for some organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/workplaceHomepage -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/workplaceHomepage">
+        <rdfs:label>workplace homepage</rdfs:label>
+        <rdfs:comment>A workplace homepage of some person; the homepage of an organization they work for.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/yahooChatID -->
+
+    <ObjectProperty rdfsyn:about="http://xmlns.com/foaf/0.1/yahooChatID">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>Yahoo chat ID</rdfs:label>
+        <rdfs:comment>A Yahoo chat ID</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#content -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#content">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#date -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#date">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#description -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#description">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#isForAdults -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#isForAdults">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jokeName -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jokeName">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#language -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#language">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#url -->
+
+    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#url">
+        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/accountName -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/accountName">
+        <rdfs:label>account name</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>Indicates the name (identifier) associated with this online account.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/age">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>age</rdfs:label>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment>The age in years of some agent.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/aimChatID -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/aimChatID">
+        <rdfs:label>AIM chat ID</rdfs:label>
+        <rdfs:comment>An AIM chat ID</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/nick"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/birthday -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/birthday">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>birthday</rdfs:label>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment>The birthday of this Agent, represented in mm-dd string form, eg. &apos;12-31&apos;.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/dnaChecksum -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/dnaChecksum">
+        <rdfs:label>DNA checksum</rdfs:label>
+        <rdfs:comment>A checksum for the DNA of some thing. Joke.</rdfs:comment>
+        <swvs:term_status>archaic</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/familyName -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/familyName">
+        <rdfs:label>familyName</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>The family name of some person.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/family_name -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/family_name">
+        <rdfs:label>family_name</rdfs:label>
+        <swvs:term_status>archaic</swvs:term_status>
+        <rdfs:comment>The family name of some person.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/firstName">
+        <rdfs:label>firstName</rdfs:label>
+        <rdfs:comment>The first name of a person.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/geekcode -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/geekcode">
+        <rdfs:label>geekcode</rdfs:label>
+        <swvs:term_status>archaic</swvs:term_status>
+        <rdfs:comment>A textual geekcode for this person, see http://www.geekcode.com/geek.html</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/gender -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>gender</rdfs:label>
+        <rdfs:comment>The gender of this Agent (typically but not necessarily &apos;male&apos; or &apos;female&apos;).</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/givenName -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/givenName">
+        <rdfs:label>Given name</rdfs:label>
+        <rdfs:comment>The given name of some person.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/givenname -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/givenname">
+        <rdfs:label>Given name</rdfs:label>
+        <rdfs:comment>The given name of some person.</rdfs:comment>
+        <swvs:term_status>archaic</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/icqChatID -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/icqChatID">
+        <rdfs:label>ICQ chat ID</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>An ICQ chat ID</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/nick"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/jabberID -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/jabberID">
+        <rdfs:label>jabber ID</rdfs:label>
+        <rdfs:comment>A jabber ID for something.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/lastName -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/lastName">
+        <rdfs:label>lastName</rdfs:label>
+        <rdfs:comment>The last name of a person.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox_sha1sum -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/mbox_sha1sum">
+        <rdfs:label>sha1sum of a personal mailbox URI name</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the first owner of the mailbox.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/msnChatID -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/msnChatID">
+        <rdfs:label>MSN chat ID</rdfs:label>
+        <rdfs:comment>An MSN chat ID</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/nick"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/myersBriggs -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/myersBriggs">
+        <rdfs:label>myersBriggs</rdfs:label>
+        <rdfs:comment>A Myers Briggs (MBTI) personality classification.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:label>name</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A name for some thing.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/nick -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/nick">
+        <rdfs:label>nickname</rdfs:label>
+        <rdfs:comment>A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/plan -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/plan">
+        <rdfs:label>plan</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A .plan comment, in the tradition of finger and &apos;.plan&apos; files.</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/sha1 -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/sha1">
+        <rdfs:label>sha1sum (hex)</rdfs:label>
+        <rdfs:comment>A sha1sum hash, in hex.</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/skypeID -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/skypeID">
+        <rdfs:label>Skype ID</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A Skype ID</rdfs:comment>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/nick"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/status -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/status">
+        <rdfs:label>status</rdfs:label>
+        <rdfs:comment>A string expressing what the user is happy for the general public (normally) to know about their current activity.</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/surname -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/surname">
+        <rdfs:label>Surname</rdfs:label>
+        <rdfs:comment>The surname of some person.</rdfs:comment>
+        <swvs:term_status>archaic</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/title -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/title">
+        <rdfs:label>title</rdfs:label>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>Title (Mr, Mrs, Ms, Dr. etc)</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/yahooChatID -->
+
+    <DatatypeProperty rdfsyn:about="http://xmlns.com/foaf/0.1/yahooChatID">
+        <rdfs:label>Yahoo chat ID</rdfs:label>
+        <rdfs:comment>A Yahoo chat ID</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:range rdfsyn:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:subPropertyOf rdfsyn:resource="http://xmlns.com/foaf/0.1/nick"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <rdfsyn:Description rdfsyn:about="http://purl.org/dc/terms/Agent">
+        <equivalentClass rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdfsyn:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Audio -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Audio">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#AudioJoke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#AudioJoke">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ImageJoke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ImageJoke">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Video -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Video">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Format"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#VideoJoke -->
+
+    <Class rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#VideoJoke">
+        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Joke"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:label>Agent</rdfs:label>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/Document">
+        <rdfs:label>Document</rdfs:label>
+        <disjointWith rdfsyn:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <disjointWith rdfsyn:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>A document.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:label>Group</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>A class of Agents.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/Image">
+        <rdfs:label>Image</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>An image.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/LabelProperty -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/LabelProperty">
+        <rdfs:label>Label Property</rdfs:label>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment>A foaf:LabelProperty is any RDF property with texual values that serve as labels.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineAccount -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+        <rdfs:label>Online Account</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:comment>An online account.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineChatAccount -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/OnlineChatAccount">
+        <rdfs:label>Online Chat Account</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment>An online chat account.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineEcommerceAccount -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/OnlineEcommerceAccount">
+        <rdfs:label>Online E-commerce Account</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment>An online e-commerce account.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineGamingAccount -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/OnlineGamingAccount">
+        <rdfs:label>Online Gaming Account</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment>An online gaming account.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label>Organization</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <disjointWith rdfsyn:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>An organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label>Person</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf rdfsyn:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdfsyn:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <disjointWith rdfsyn:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>A person.</rdfs:comment>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/PersonalProfileDocument -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/PersonalProfileDocument">
+        <rdfs:label>PersonalProfileDocument</rdfs:label>
+        <rdfs:subClassOf rdfsyn:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment>A personal profile RDF document.</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <Class rdfsyn:about="http://xmlns.com/foaf/0.1/Project">
+        <rdfs:label>Project</rdfs:label>
+        <rdfs:comment>A project (a collective endeavour of some kind).</rdfs:comment>
+        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Animals -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Animals">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Blonde -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Blonde">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Country -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Country">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#CrossTheRoad -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#CrossTheRoad">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#DarkHumor -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#DarkHumor">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Dirty -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Dirty">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Doctor -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Doctor">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Fat -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Fat">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Food -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Food">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#God -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#God">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Insults -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Insults">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Kids -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Kids">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Lawyer -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Lawyer">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LittleJohnny -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LittleJohnny">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LookingGood -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LookingGood">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ManWomen -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ManWomen">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Marriage -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Marriage">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Money -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Money">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Nationality -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Nationality">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#NewsAndPolitics -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#NewsAndPolitics">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PartyingAndBadBehavior -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PartyingAndBadBehavior">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PickUpLines -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PickUpLines">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PoliceAndMilitary -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PoliceAndMilitary">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PopCultureAndCelebrity -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PopCultureAndCelebrity">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#School -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#School">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Sports -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Sports">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Technology -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Technology">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ThatIsGross -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ThatIsGross">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TravelAndCar -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TravelAndCar">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#WalksIntoBar -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#WalksIntoBar">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Work -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Work">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#YoMama -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#YoMama">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#animaljokes -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#animaljokes">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#avi -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#avi">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Video"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#birditthroughthegrapevine -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#birditthroughthegrapevine">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:content>Did you hear about the man who did it with a parakeet? He contracted chirpes. And the worst thing? It was untweetable. </untitled-ontology-82:content>
+        <untitled-ontology-82:jokeName>Bird it Through the Grapevine</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:description>Did you hear about the man who did it with a parakeet? He contracted chirpes. And the worst thing? It was untweetable.</untitled-ontology-82:description>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-animal-jokes/db97yo/bird-it-through-the-grapevine</untitled-ontology-82:url>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#animaljokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#dirtyjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#doctorjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#men/women"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#birdsofparadise -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#birdsofparadise">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:description>Yo&apos; mama so fat, when she was a baby, she took a bath with a rubber albatross.</untitled-ontology-82:description>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-animal-jokes/vpl0xy/birds-of-paradise</untitled-ontology-82:url>
+        <untitled-ontology-82:jokeName>Birds of Paradise</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:content>Yo&apos; mama so fat, when she was a baby, she took a bath with a rubber albatross.</untitled-ontology-82:content>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#animaljokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#insults"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jokesaboutkids"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#yomama"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#classicbootycall...cops -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#classicbootycall...cops">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-dirty-jokes/wry0qv/classic-booty-call----cops</untitled-ontology-82:url>
+        <untitled-ontology-82:content>The cops must be after you because it&apos;s illegal to look that good.</untitled-ontology-82:content>
+        <untitled-ontology-82:description>The cops must be after you because it&apos;s illegal to look that good.</untitled-ontology-82:description>
+        <untitled-ontology-82:jokeName>Classic Booty Call... Cops</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#dirtyjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#pick-uplines"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#policemilitary"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#contraceptives98 -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#contraceptives98">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-dirty-jokes/3wfhfu/contraceptives--98</untitled-ontology-82:url>
+        <untitled-ontology-82:description>Microsoft&apos;s Latest Venture Ã‚Â Ã‚Â Ã‚Â  News just in of Microsoft&apos;s latest venture: Microsoft Corporation has taken another step toward dominating every aspect of American life with the introduction of Contraceptive98, a...</untitled-ontology-82:description>
+        <untitled-ontology-82:content>Microsoft&apos;s Latest Venture  Ã‚Â Ã‚Â Ã‚Â  News just in of Microsoft&apos;s latest venture: Microsoft Corporation has taken another step toward dominating every aspect of American life with the introduction of Contraceptive98, a suite of applications designed for users who engage in sex. Microsoft has been a pioneer in peer-to-peer connectivity and plug and play. Ã‚Â Ã‚Â Ã‚Â  It believes these technologies will give it substantial leverage in penetrating the copulation enhancement market. The product addresses two important user concerns: the need for virus protection and the need for a firewall to ensure the non-propagation of human beings. Ã‚Â Ã‚Â Ã‚Â  The Contraceptive98 suite consists of three products: Condom98, DeFetus 1.0 (from Sementec), and AIDScan 2.1 (from Norton Utilities). A free copy of Intercourse Explorer 4.0 is bundled in the package. The suite also comes in two expanded versions. Contraceptive98 Professional is the Client/Server edition, for professionals in the sexual services sector. Contraceptive98 Small Business Edition is a package for startups, aimed at the housewife and gigolo niches. Ã‚Â Ã‚Â Ã‚Â  While Contraceptive98 does not address nontraditional copulatory channels, future plug-ins are planned for next year. Ã‚Â Ã‚Â Ã‚Â  OPERATION: Only one node in a peer-to-peer connection needs to install the package. Ã‚Â Ã‚Â Ã‚Â  At installation, the Condom98 software checks for minimum hardware. If the user meets the requirements, the product installs and is sufficiently scaleable to meet most requirements. After installation, operation commences. One precaution is that the user must be sure they have sufficient RAM to complete the session. When the session is complete, a disconnect is initiated, and the user gets the message, it is now safe to turn off your partner. Ã‚Â Ã‚Â Ã‚Â  DRAWBACKS: Usability testers report that frequent failures were a major concern during beta testing. General Protection Fault was the most serious error encountered. Early versions had numerous bugs, but most of these have been eliminated. The product needs to be installed each time its used. Ã‚Â Ã‚Â Ã‚Â  CONCLUSION: Contraceptive98 is a robust product. Despite its drawbacks, it is reasonably good value for its $49.95 price tag, and is far superior to its shareware version. Hopefully, future releases (of the software, that is) will add missing functionality, such as Backout and Restore, uninterruptible Power Supply and Onboard Camera. Ã‚Â Ã‚Â Ã‚Â  Microsoft CEO Bill Gates is optimistic that &quot;Our contraceptive products will help users do to each other what we&apos;ve been doing to our customers for years.&quot; </untitled-ontology-82:content>
+        <untitled-ontology-82:jokeName>Contraceptives &apos;98</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#dirtyjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#newspolitics"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#policemilitary"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#popculturecelebrityjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#sportsjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#technologyjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#workjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#men/women"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#darkhumor -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#darkhumor">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#dirtyjokes -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#dirtyjokes">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#doctorjokes -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#doctorjokes">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#gif -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#gif">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#insults -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#insults">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jokesaboutkids -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jokesaboutkids">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jpg -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#jpg">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#lawyerjokes -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#lawyerjokes">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#mp3 -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#mp3">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Audio"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#newspolitics -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#newspolitics">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#pick-uplines -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#pick-uplines">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#pictureperfect -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#pictureperfect">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:jokeName>Picture Perfect</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:description>Yo mama so fat, her portrait fell off the wall</untitled-ontology-82:description>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-insults/t6f81j/picture-perfect</untitled-ontology-82:url>
+        <untitled-ontology-82:content>Yo mama so fat, her portrait fell off the wall</untitled-ontology-82:content>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#insults"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#yomama"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#png -->
+
+    <Thing rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#png">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Image"/>
+        <rdfsyn:type rdfsyn:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#policemilitary -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#policemilitary">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#popculturecelebrityjokes -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#popculturecelebrityjokes">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#poppaisabrandnewbag -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#poppaisabrandnewbag">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:description>Yo&apos; daddy&apos;s so ugly, when he looked out the window he was arrested for mooning!</untitled-ontology-82:description>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-insults/eez78x/poppa-is-a-brand-new-bag</untitled-ontology-82:url>
+        <untitled-ontology-82:content>Yo&apos; daddy&apos;s so ugly, when he looked out the window he was arrested for mooning!</untitled-ontology-82:content>
+        <untitled-ontology-82:jokeName>Poppa is a Brand New Bag</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#insults"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#yomama"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#sportsjokes -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#sportsjokes">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#technologyjokes -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#technologyjokes">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#thirdopinion -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#thirdopinion">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:description>Three Doctors are dicussing which types of patients they prefer. Doctor Watson says, &apos;&apos;I prefer librarians. All their organs are alphabetized.&apos;&apos; Doctor Fitzpatrick says, &apos;&apos;I prefer mathematicians. All their organs are numbered.&apos;&apos;...</untitled-ontology-82:description>
+        <untitled-ontology-82:jokeName>Third Opinion</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:content>Three Doctors are dicussing which types of patients they prefer. Doctor Watson says, &apos;&apos;I prefer librarians. All their organs are alphabetized.&apos;&apos; Doctor Fitzpatrick says, &apos;&apos;I prefer mathematicians. All their organs are numbered.&apos;&apos; Doctor Ahn says, &apos;&apos;I prefer lawyers. They are gutless, heartless, brainless, spineless, and their heads and rear ends are interchangeable.&apos;&apos;</untitled-ontology-82:content>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-doctor-jokes/4q2uq0/third-opinion</untitled-ontology-82:url>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#doctorjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#lawyerjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#workjokes"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#thoseconceitedbastarddoctors -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#thoseconceitedbastarddoctors">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-doctor-jokes/hv1886/those-conceited-bastard-doctors</untitled-ontology-82:url>
+        <untitled-ontology-82:content>Q: What is the difference between a brain surgeon and God? A: God doesn&apos;t think he&apos;s a brain surgeon!</untitled-ontology-82:content>
+        <untitled-ontology-82:jokeName>Those Conceited Bastard Doctors</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:description>Q: What is the difference between a brain surgeon and God? A: God doesn&apos;t think he&apos;s a brain surgeon!</untitled-ontology-82:description>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#doctorjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#workjokes -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#workjokes">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#yomama -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#yomama">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#men/women -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#men/women">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#torianhughes:songsdontmakeusdoanything -->
+
+    <NamedIndividual rdfsyn:about="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#torianhughes:songsdontmakeusdoanything">
+        <rdfsyn:type rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke"/>
+        <untitled-ontology-82:content>Songs are not going to make us do anything we would not ordinarily do. Because if that was the case, the song &apos;Achy Breaky Heart&apos; would have made me kill somebody about a year ago.</untitled-ontology-82:content>
+        <untitled-ontology-82:description>Songs are not going to make us do anything we would not ordinarily do. Because if that was the case, the song &apos;Achy Breaky Heart&apos; would have made me kill somebody about a year ago.</untitled-ontology-82:description>
+        <untitled-ontology-82:jokeName>Torian Hughes: Songs Don&apos;t Make Us Do Anything</untitled-ontology-82:jokeName>
+        <untitled-ontology-82:url>http://jokes.cc.com/funny-dark-humor/r20z5r/torian-hughes--songs-don-t-make-us-do-anything</untitled-ontology-82:url>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#darkhumor"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#policemilitary"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#popculturecelebrityjokes"/>
+        <untitled-ontology-82:hasGenre rdfsyn:resource="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#somethingfunny"/>
+    </NamedIndividual>
+</rdfsyn:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net -->

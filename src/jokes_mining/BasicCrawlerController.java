@@ -18,6 +18,10 @@
 //package edu.uci.ics.crawler4j.examples.basic;
 package jokes_mining;
 
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.OntModelSpec;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+
 import edu.uci.ics.crawler4j.crawler.CrawlConfig;
 import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.fetcher.PageFetcher;
@@ -31,6 +35,7 @@ import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
 public class BasicCrawlerController {
 
   public static void main(String[] args) throws Exception {
+    
     if (args.length != 2) {
       System.out.println("Needed parameters: ");
       System.out.println("\t rootFolder (it will contain intermediate crawl data)");
