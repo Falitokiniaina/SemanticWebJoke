@@ -13,6 +13,7 @@ import org.jsoup.nodes.Element;
 import java.io.FileOutputStream;
 //import java.util.Set;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -37,7 +38,8 @@ public class BasicCrawler extends WebCrawler {
 	static FileOutputStream output = null;
 	String NS;	
 	OntClass textJokeRes, GenreClassRes;
-	OntProperty nameProp, descProp, contentProp, urlProp;  
+	OntProperty nameProp, descProp, contentProp, urlProp, nameGenreProp, dateProp;
+	Date date;
 
   private final static Pattern FILTERS = Pattern.compile(".*(\\.(css|js|bmp|gif|jpe?g" 
                                                        + "|png|tiff?|mid|mp2|mp3|mp4"
@@ -66,7 +68,10 @@ public class BasicCrawler extends WebCrawler {
 	this.nameProp = model.getOntProperty(NS+"jokeName");
 	this.descProp = model.getOntProperty(NS+"description");
 	this.contentProp = model.getOntProperty(NS+"content");
-	this.urlProp = model.getOntProperty(NS+"url");    
+	this.urlProp = model.getOntProperty(NS+"url");  
+	this.nameGenreProp = model.getOntProperty(NS+"name");
+	this.dateProp = model.getOntProperty(NS+"date");
+	date = new Date();
 	try  {
 	  output = new FileOutputStream( "new_owl.owl");     
 	} catch(Exception e) {
@@ -155,17 +160,19 @@ public class BasicCrawler extends WebCrawler {
       				if(thisInstance.toString().endsWith(newGenre)){found=true; break;}      						
       			}	        	  
       		  if(!found){
-      			model.createIndividual(NS+newGenre, GenreClassRes);
+      			model.createIndividual(NS+newGenre, GenreClassRes)
+      			.addProperty(nameGenreProp, newGenre);;
       		  }              
           }          
-          
+                    
          //textJokeRes.createIndividual(NS+"#joke1")
           String indivName = this.clean_string(jokeName);          
           model.createIndividual(NS+indivName,textJokeRes)  			
           	.addProperty(nameProp, jokeName) 
 			.addProperty(descProp, jokeDesc)   
 			.addProperty(contentProp, joke)
-			.addProperty(urlProp, jokeUrl);
+			.addProperty(urlProp, jokeUrl)
+			.addProperty(dateProp, date.toString());
           Individual ind = model.getIndividual(NS+indivName);
           for (String s : jokeCategory) {        	  
         	  newGenre = this.clean_string(s);        	  

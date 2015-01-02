@@ -408,6 +408,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#name -->
+
+    <DatatypeProperty rdfsyn:about="#name">
+        <rdfs:domain rdfsyn:resource="#Genre"/>
+        <rdfs:range rdfsyn:resource="&xs;#string"/>
+    </DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#url -->
 
     <DatatypeProperty rdfsyn:about="#url">
@@ -502,6 +511,12 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <Class rdfsyn:about="&owl;Thing"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <Class rdfsyn:about="&foaf;Agent"/>
@@ -516,262 +531,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Animals -->
-
-    <Thing rdfsyn:about="#Animals">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Blonde -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#Blonde">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Country -->
-
-    <Thing rdfsyn:about="#Country">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#CrossTheRoad -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#CrossTheRoad">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#DarkHumor -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#DarkHumor">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Dirty -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#Dirty">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Doctor -->
-
-    <Thing rdfsyn:about="#Doctor">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Fat -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#Fat">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Food -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#Food">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#God -->
-
-    <Thing rdfsyn:about="#God">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Insults -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#Insults">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Kids -->
-
-    <Thing rdfsyn:about="#Kids">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Lawyer -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#Lawyer">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LittleJohnny -->
-
-    <Thing rdfsyn:about="#LittleJohnny">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#LookingGood -->
-
-    <Thing rdfsyn:about="#LookingGood">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ManWomen -->
-
-    <Thing rdfsyn:about="#ManWomen">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Marriage -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#Marriage">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Money -->
-
-    <Thing rdfsyn:about="#Money">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Nationality -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#Nationality">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#NewsAndPolitics -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#NewsAndPolitics">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PartyingAndBadBehavior -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#PartyingAndBadBehavior">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PickUpLines -->
-
-    <Thing rdfsyn:about="#PickUpLines">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PoliceAndMilitary -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#PoliceAndMilitary">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#PopCultureAndCelebrity -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#PopCultureAndCelebrity">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#School -->
-
-    <Thing rdfsyn:about="#School">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Sports -->
-
-    <Thing rdfsyn:about="#Sports">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Technology -->
-
-    <Thing rdfsyn:about="#Technology">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#ThatIsGross -->
-
-    <Thing rdfsyn:about="#ThatIsGross">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TravelAndCar -->
-
-    <Thing rdfsyn:about="#TravelAndCar">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#WalksIntoBar -->
-
-    <Thing rdfsyn:about="#WalksIntoBar">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Work -->
-
-    <Thing rdfsyn:about="#Work">
-        <rdfsyn:type rdfsyn:resource="#Genre"/>
-    </Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#YoMama -->
-
-    <untitled-ontology-82:Genre rdfsyn:about="#YoMama">
-        <rdfsyn:type rdfsyn:resource="&owl;Thing"/>
-    </untitled-ontology-82:Genre>
     
 
 
