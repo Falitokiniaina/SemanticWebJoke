@@ -1,399 +1,27 @@
 <?xml version="1.0"?>
 
 
-<!DOCTYPE rdfsyn:RDF [
-    <!ENTITY test "inn/" >
-    <!ENTITY eg "urn:x-hp:eg/" >
-    <!ENTITY bevon "http://rdfs.co/bevon/" >
-    <!ENTITY fam "http://a.com/ontology#" >
-    <!ENTITY void "http://rdfs.org/ns/void#" >
-    <!ENTITY geon "http://sws.geonames.org/" >
-    <!ENTITY page "http://dbpedia.org/page/" >
-    <!ENTITY c4o "http://purl.org/spar/c4o/" >
-    <!ENTITY tw "http://tw.rpi.edu/schema/" >
-    <!ENTITY org "http://www.w3.org/ns/org/" >
-    <!ENTITY dcterms "http://purl.org/dc/terms/" >
-    <!ENTITY pwo "http://purl.org/spar/pwo/" >
-    <!ENTITY cito "http://purl.org/spar/cito/" >
-    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+<!DOCTYPE rdf:RDF [
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
-    <!ENTITY paper "http://www.icecoolfire.com#" >
-    <!ENTITY fabio "http://purl.org/spar/fabio/" >
-    <!ENTITY yso "http://www.yso.fi/onto/yso/" >
-    <!ENTITY ysa "http://www.yso.fi/onto/ysa/" >
-    <!ENTITY acfoo "http://acme.example.com/foo" >
-    <!ENTITY vann "http://purl.org/vocab/vann/" >
-    <!ENTITY db "http://ex.com/owl2/families#" >
-    <!ENTITY twi "http://tw.rpi.edu/instances/" >
-    <!ENTITY resource "http://dbpedia.org/resource/" >
-    <!ENTITY dbpedia-owl "http://dbpedia.org/ontology/" >
-    <!ENTITY ope "http://www.fitforall.gr/ope#" >
-    <!ENTITY owl_time "http://www.w3.org/2006/time#" >
-    <!ENTITY kito "http://www.yso.fi/onto/kito/" >
-    <!ENTITY dctype "http://purl.org/dc/dcmitype/" >
-    <!ENTITY kauno "http://www.yso.fi/onto/kauno/" >
-    <!ENTITY ex "http://example.org/stuff/1.0/" >
-    <!ENTITY doap "http://usefulinc.com/ns/doap#" >
-    <!ENTITY wped "http://en.wikipedia.org/wiki/" >
-    <!ENTITY provdc "http://www.w3.org/ns/prov-dc#" >
-    <!ENTITY lom "http://ltsc.ieee.org/xsd/LOM/" >
-    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY cc "http://creativecommons.org/ns#" >
-    <!ENTITY kb "http://protege.stanford.edu/kb#" >
-    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
-    <!ENTITY skos2 "http://www.w3.org/2008/05/skos#" >
-    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY app "http://eagle-i.org/ont/app/1.0/" >
-    <!ENTITY tsrmeta "http://www.yso.fi/onto/tsr-meta/" >
-    <!ENTITY myext "http://example.com/my-extensions" >
-    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
-    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
-    <!ENTITY y "http://www.yovisto.com/resource/" >
-    <!ENTITY ktometa "http://www.yso.fi/onto/kto-meta/" >
-    <!ENTITY j.1 "http://semanticdesktop/ontology#" >
-    <!ENTITY maometa "http://www.yso.fi/onto/mao-meta/" >
-    <!ENTITY aka "http://vivoweb.org/ontology/aka#" >
-    <!ENTITY afometa "http://www.yso.fi/onto/afo-meta/" >
-    <!ENTITY xs "http://www.w3.org/2001/XMLSchema" >
-    <!ENTITY taometa "http://www.yso.fi/onto/tao-meta/" >
-    <!ENTITY dcelem "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY vcard "http://www.w3.org/2006/vcard/ns#" >
-    <!ENTITY jupometa "http://www.yso.fi/onto/jupo-meta/" >
-    <!ENTITY kito-meta "http://www.yso.fi/onto/kito-meta/" >
-    <!ENTITY valometa "http://www.yso.fi/onto/valo-meta/" >
-    <!ENTITY musometa "http://www.yso.fi/onto/muso-meta/" >
-    <!ENTITY merometa "http://www.yso.fi/onto/mero-meta/" >
-    <!ENTITY puhometa "http://www.yso.fi/onto/puho-meta/" >
-    <!ENTITY kulometa "http://www.yso.fi/onto/kulo-meta/" >
-    <!ENTITY vivo "http://vivoweb.org/ontology/core#" >
-    <!ENTITY story "http://www.example.org/story.owl#" >
-    <!ENTITY juhometa "http://www.yso.fi/onto/juho-meta/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY liitometa "http://www.yso.fi/onto/liito-meta/" >
-    <!ENTITY ysoupdate "http://www.yso.fi/onto/yso-update/" >
-    <!ENTITY owlapi "http://www.semanticweb.org/owlapi#" >
-    <!ENTITY skosxl "http://www.w3.org/2008/05/skos-xl#" >
-    <!ENTITY kaunometa "http://www.yso.fi/onto/kauno-meta/" >
-    <!ENTITY ssn "http://purl.oclc.org/NET/ssnx/ssn#" >
-    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
-    <!ENTITY event "http://purl.org/NET/c4dm/event.owl#" >
-    <!ENTITY xref "http://id.crossref.org/contributor/" >
-    <!ENTITY gfvo "http://www.biointerchange.org/gfvo#" >
-    <!ENTITY ysokehitys "http://www.yso.fi/onto/yso-kehitys/" >
-    <!ENTITY a "http://protege.stanford.edu/system#" >
-    <!ENTITY isothes "http://purl.org/iso25964/skos-thes#" >
-    <!ENTITY fma "http://purl.obolibrary.org/obo/fma#" >
-    <!ENTITY ns0 "http://aims.fao.org/aos/agrontology#" >
-    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
-    <!ENTITY sio "http://semanticscience.org/resource/" >
-    <!ENTITY afn "http://jena.hpl.hp.com/ARQ/function#" >
-    <!ENTITY knowrob "http://ias.cs.tum.edu/kb/knowrob.owl#" >
-    <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
-    <!ENTITY j.3 "http://www.opengis.net/ont/geosparql#" >
-    <!ENTITY geosp "http://www.opengis.net/ont/geosparql/" >
-    <!ENTITY status "http://purl.org/ontology/bibo/status/" >
-    <!ENTITY ysotranslate "http://www.yso.fi/onto/yso-translate/" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY ocrer "http://purl.org/net/OCRe/research.owl#" >
-    <!ENTITY aktp "http://www.aktors.org/ontology/portal#" >
-    <!ENTITY clinic "http://www.example.org/schemas/clinic/" >
-    <!ENTITY gcis "http://data.globalchange.gov/gcis.owl#" >
-    <!ENTITY degrees "http://purl.org/ontology/bibo/degrees/" >
-    <!ENTITY this "http://ontovibe.visualdataweb.org/1.0#" >
-    <!ENTITY local "http://vivo.cornell.edu/ontology/local#" >
-    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
-    <!ENTITY vivoc "http://vivo.library.cornell.edu/ns/0.1#" >
-    <!ENTITY faldo "http://biohackathon.org/resource/faldo#" >
-    <!ENTITY www "http://www.movieontology.org/2009/11/09/" >
-    <!ENTITY ospcu "http://vivoweb.org/ontology/cu-vivo-osp#" >
-    <!ENTITY statistics "http://purl.org/net/OCRe/statistics.owl#" >
-    <!ENTITY skosext "http://purl.org/finnonto/schema/skosext#" >
-    <!ENTITY computable "http://ias.cs.tum.edu/kb/computable.owl#" >
-    <!ENTITY error "http://www.essepuntato.it/2009/10/error/" >
-    <!ENTITY DUL "http://www.loa-cnr.it/ontologies/DUL.owl#" >
-    <!ENTITY geopolitical "http://aims.fao.org/aos/geopolitical.owl#" >
-    <!ENTITY investopedia "http://protege.stanford.edu/investopedia#" >
-    <!ENTITY hr "http://vivo.cornell.edu/ns/hr/0.9/hr.owl#" >
-    <!ENTITY vom "http://vocab.arvida.de/2014/03/vom/vocab#" >
-    <!ENTITY j.0 "http://www.owl-ontologies.com/turismo.owl#" >
-    <!ENTITY sf "http://sourceforge.net/api/sfelements.rdf#" >
-    <!ENTITY exergame "http://www.fitforall.gr/ontology/exergame#" >
-    <!ENTITY ocresd "http://purl.org/net/OCRe/study_design.owl#" >
-    <!ENTITY rdfsyn "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY pubmed "http://vitro.mannlib.cornell.edu/ns/pubmed#" >
-    <!ENTITY maths "http://vocab.arvida.de/2014/03/maths/vocab#" >
-    <!ENTITY ns1 "http://art.uniroma2.it/ontologies/vocbench#" >
-    <!ENTITY yso-meta "http://www.yso.fi/onto/yso-meta/2007-03-02/" >
-    <!ENTITY sweet "http://sweet.jpl.nasa.gov/2.3/sweetAll.owl#" >
-    <!ENTITY act "http://pervasive.semanticweb.org/ont/action#" >
-    <!ENTITY study_protocol "http://purl.org/net/OCRe/study_protocol.owl#" >
-    <!ENTITY wcmc "http://weill.cornell.edu/vivo/ontology/wcmc#" >
-    <!ENTITY mann "http://vivo.cornell.edu/ns/mannadditions/0.1#" >
-    <!ENTITY acti "http://vivoweb.org/ontology/activity-insight#" >
-    <!ENTITY schema "http://schemas.talis.com/2005/address/schema#" >
-    <!ENTITY swvs "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
-    <!ENTITY spatial "http://vocab.arvida.de/2014/03/spatial/vocab#" >
-    <!ENTITY onyx "http://www.gsi.dit.upm.es/ontologies/onyx/ns#" >
-    <!ENTITY camera "http://www.xfront.com/owl/ontologies/camera/#" >
-    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
-    <!ENTITY dspace-ont "http://swig.hpclab.ceid.upatras.gr/dspace-ont/" >
-    <!ENTITY om "http://www.yso.fi/onto/yso/peilaus/2007-03-02/" >
-    <!ENTITY far "http://vitro.mannlib.cornell.edu/ns/reporting#" >
-    <!ENTITY prism "http://prismstandard.org/namespaces/1.2/basic/" >
-    <!ENTITY vitro "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" >
-    <!ENTITY other "http://ontovibe.visualdataweb.org/1.0/imported#" >
-    <!ENTITY tag "http://www.holygoat.co.uk/owl/redwood/0.1/tags/" >
-    <!ENTITY pvs "http://vivoweb.org/ontology/provenance-support#" >
-    <!ENTITY map "http://www.w3c.rl.ac.uk/2003/11/21-skos-mapping#" >
-    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
-    <!ENTITY scires "http://vivoweb.org/ontology/scientific-research#" >
-    <!ENTITY pizza "http://www.co-ode.org/ontologies/pizza/pizza.owl#" >
-    <!ENTITY j.2 "http://inspire.jrc.ec.europa.eu/schemas/base/3.2/" >
-    <!ENTITY vitro-public "http://vitro.mannlib.cornell.edu/ns/vitro/public#" >
-    <!ENTITY sumo "http://stuarthendren.net/resource/sumodlfull.owl#" >
-    <!ENTITY exergame-metric "http://www.fitforall.gr/ontology/exergame-metric#" >
-    <!ENTITY iso11179-3e3 "http://constellation.jhuapl.edu/iso11179-3e3.owl#" >
-    <!ENTITY sbmed "http://vivo.stonybrookmedicine.edu/ontology/core#" >
-    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
-    <!ENTITY wos "http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#" >
-    <!ENTITY swrla "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#" >
-    <!ENTITY socsci "http://vivo.library.cornell.edu/ns/vivo/socsci/0.1#" >
-    <!ENTITY exergame-sitetype "http://www.fitforall.gr/ontology/exergame-sitetype#" >
-    <!ENTITY exergame-exercise "http://www.fitforall.gr/ontology/exergame-exercise#" >
-    <!ENTITY literature "http://www.ida.liu.se/~almhe/SecurityLiterature.owl#" >
-    <!ENTITY food "http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#" >
-    <!ENTITY vin "http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#" >
-    <!ENTITY mpeg7 "http://rhizomik.net/ontologies/2005/03/Mpeg7-2001.owl#" >
-    <!ENTITY meta "http://www.ontologydesignpatterns.org/schemas/meta.owl#" >
-    <!ENTITY display "http://vitro.mannlib.cornell.edu/ontologies/display/1.1#" >
-    <!ENTITY sce "http://vivoweb.org/ontology/SchoolOfContinuingEducation#" >
-    <!ENTITY dsd "http://people.lis.illinois.edu/~ddubin/resource/example/" >
-    <!ENTITY scirr "http://vivoweb.org/ontology/scientific-research-resource#" >
-    <!ENTITY exergame-gamecontroller "http://www.fitforall.gr/ontology/exergame-gamecontroller#" >
-    <!ENTITY cce "http://vivoweb.org/ontology/cornell-cooperative-extension#" >
-    <!ENTITY stars "http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#" >
-    <!ENTITY seq "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#" >
-    <!ENTITY movieontology2 "http://www.movieontology.org/2009/11/09/movieontology.owl#" >
-    <!ENTITY movieontology "http://www.movieontology.org/2009/10/01/movieontology.owl#" >
-    <!ENTITY sit "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#" >
-    <!ENTITY cflow "http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#" >
-    <!ENTITY sqwrl "http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#" >
-    <!ENTITY timeint "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#" >
-    <!ENTITY taskex "http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#" >
-    <!ENTITY part "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#" >
-    <!ENTITY family_example "https://wiki.csc.calpoly.edu/OntologyTutorial/family_example.owl#" >
-    <!ENTITY config "http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#" >
-    <!ENTITY planex "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#" >
-    <!ENTITY tisit "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#" >
-    <!ENTITY plandesc "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#" >
-    <!ENTITY untitled-ontology-82 "http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#" >
-    <!ENTITY untitled-ontology-8 "http://www.semanticweb.org/sparsha/ontologies/2014/10/untitled-ontology-8#" >
-    <!ENTITY untitled-ontology-19 "http://www.semanticweb.org/jkrammer/ontologies/2014/3/untitled-ontology-19#" >
-    <!ENTITY OWLSchemaPisco "https://code.google.com/p/igc-pucp/source/browse/trunk/owl/OWLSchemaPisco.owl#" >
-    <!ENTITY onto "http://137.208.51.84:5000/owl/2014_11_03+19&#37;3A20&#37;3A26+nahost_spectral_brute_limit_50_crowdflower&#37;2F3#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
 ]>
 
 
-<rdfsyn:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
-     xmlns:pwo="http://purl.org/spar/pwo/"
-     xmlns:movieontology2="&www;movieontology.owl#"
-     xmlns:clinic="http://www.example.org/schemas/clinic/"
-     xmlns:movieontology="http://www.movieontology.org/2009/10/01/movieontology.owl#"
-     xmlns:aka="http://vivoweb.org/ontology/aka#"
-     xmlns:cito="http://purl.org/spar/cito/"
-     xmlns:test="inn/"
-     xmlns:tag="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
-     xmlns:geon="http://sws.geonames.org/"
-     xmlns:ope="http://www.fitforall.gr/ope#"
-     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:skosext="http://purl.org/finnonto/schema/skosext#"
-     xmlns:schema="http://schemas.talis.com/2005/address/schema#"
-     xmlns:plandesc="http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#"
-     xmlns:story="http://www.example.org/story.owl#"
-     xmlns:computable="http://ias.cs.tum.edu/kb/computable.owl#"
-     xmlns:page="http://dbpedia.org/page/"
-     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
-     xmlns:vin="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#"
-     xmlns:om="&yso;peilaus/2007-03-02/"
-     xmlns:vivoc="http://vivo.library.cornell.edu/ns/0.1#"
-     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:c4o="http://purl.org/spar/c4o/"
-     xmlns:config="http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#"
-     xmlns:cce="http://vivoweb.org/ontology/cornell-cooperative-extension#"
-     xmlns:onyx="http://www.gsi.dit.upm.es/ontologies/onyx/ns#"
-     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
-     xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
-     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
-     xmlns:lom="http://ltsc.ieee.org/xsd/LOM/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:aktp="http://www.aktors.org/ontology/portal#"
-     xmlns:maths="http://vocab.arvida.de/2014/03/maths/vocab#"
-     xmlns:fabio="http://purl.org/spar/fabio/"
-     xmlns:geosp="http://www.opengis.net/ont/geosparql/"
-     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-     xmlns:kaunometa="http://www.yso.fi/onto/kauno-meta/"
-     xmlns:myext="http://example.com/my-extensions"
-     xmlns:stars="http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:mann="http://vivo.cornell.edu/ns/mannadditions/0.1#"
-     xmlns:iso11179-3e3="http://constellation.jhuapl.edu/iso11179-3e3.owl#"
-     xmlns:ysoupdate="http://www.yso.fi/onto/yso-update/"
-     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
-     xmlns:scires="http://vivoweb.org/ontology/scientific-research#"
-     xmlns:exergame-gamecontroller="http://www.fitforall.gr/ontology/exergame-gamecontroller#"
-     xmlns:tsrmeta="http://www.yso.fi/onto/tsr-meta/"
-     xmlns:org="http://www.w3.org/ns/org/"
-     xmlns:meta="http://www.ontologydesignpatterns.org/schemas/meta.owl#"
-     xmlns:mpeg7="http://rhizomik.net/ontologies/2005/03/Mpeg7-2001.owl#"
-     xmlns:musometa="http://www.yso.fi/onto/muso-meta/"
-     xmlns:map="http://www.w3c.rl.ac.uk/2003/11/21-skos-mapping#"
-     xmlns:taometa="http://www.yso.fi/onto/tao-meta/"
-     xmlns:untitled-ontology-8="http://www.semanticweb.org/sparsha/ontologies/2014/10/untitled-ontology-8#"
-     xmlns:vivo="http://vivoweb.org/ontology/core#"
-     xmlns:ex="http://example.org/stuff/1.0/"
-     xmlns:ocresd="http://purl.org/net/OCRe/study_design.owl#"
-     xmlns:app="http://eagle-i.org/ont/app/1.0/"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
-     xmlns:spatial="http://vocab.arvida.de/2014/03/spatial/vocab#"
-     xmlns:merometa="http://www.yso.fi/onto/mero-meta/"
-     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-     xmlns:a="http://protege.stanford.edu/system#"
-     xmlns:yso="http://www.yso.fi/onto/yso/"
-     xmlns:void="http://rdfs.org/ns/void#"
-     xmlns:kito-meta="http://www.yso.fi/onto/kito-meta/"
-     xmlns:jupometa="http://www.yso.fi/onto/jupo-meta/"
-     xmlns:ospcu="http://vivoweb.org/ontology/cu-vivo-osp#"
-     xmlns:sit="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:acti="http://vivoweb.org/ontology/activity-insight#"
-     xmlns:eg="urn:x-hp:eg/"
-     xmlns:exergame-sitetype="http://www.fitforall.gr/ontology/exergame-sitetype#"
-     xmlns:ocrer="http://purl.org/net/OCRe/research.owl#"
-     xmlns:tw="http://tw.rpi.edu/schema/"
-     xmlns:bibo="http://purl.org/ontology/bibo/"
-     xmlns:sio="http://semanticscience.org/resource/"
-     xmlns:wped="http://en.wikipedia.org/wiki/"
-     xmlns:xref="http://id.crossref.org/contributor/"
-     xmlns:sumo="http://stuarthendren.net/resource/sumodlfull.owl#"
-     xmlns:xsd="&xs;#"
-     xmlns:ysa="http://www.yso.fi/onto/ysa/"
-     xmlns:vitro-public="http://vitro.mannlib.cornell.edu/ns/vitro/public#"
-     xmlns:dspace-ont="http://swig.hpclab.ceid.upatras.gr/dspace-ont/"
-     xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:part="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
-     xmlns:y="http://www.yovisto.com/resource/"
-     xmlns:yso-meta="http://www.yso.fi/onto/yso-meta/2007-03-02/"
-     xmlns:exergame-metric="http://www.fitforall.gr/ontology/exergame-metric#"
-     xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
-     xmlns:liitometa="http://www.yso.fi/onto/liito-meta/"
-     xmlns:exergame="http://www.fitforall.gr/ontology/exergame#"
-     xmlns:untitled-ontology-82="http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#"
-     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
-     xmlns:wcmc="http://weill.cornell.edu/vivo/ontology/wcmc#"
-     xmlns:family_example="https://wiki.csc.calpoly.edu/OntologyTutorial/family_example.owl#"
-     xmlns:ysokehitys="http://www.yso.fi/onto/yso-kehitys/"
-     xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
-     xmlns:maometa="http://www.yso.fi/onto/mao-meta/"
-     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
-     xmlns:planex="http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#"
-     xmlns:kb="http://protege.stanford.edu/kb#"
-     xmlns:faldo="http://biohackathon.org/resource/faldo#"
-     xmlns:puhometa="http://www.yso.fi/onto/puho-meta/"
-     xmlns:sbmed="http://vivo.stonybrookmedicine.edu/ontology/core#"
-     xmlns:dcelem="http://purl.org/dc/elements/1.1/"
-     xmlns:gcis="http://data.globalchange.gov/gcis.owl#"
-     xmlns:onto="http://137.208.51.84:5000/owl/2014_11_03+19%3A20%3A26+nahost_spectral_brute_limit_50_crowdflower%2F3#"
-     xmlns:db="http://ex.com/owl2/families#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:status="&bibo;status/"
-     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
-     xmlns:OWLSchemaPisco="https://code.google.com/p/igc-pucp/source/browse/trunk/owl/OWLSchemaPisco.owl#"
-     xmlns:j.1="http://semanticdesktop/ontology#"
-     xmlns:literature="http://www.ida.liu.se/~almhe/SecurityLiterature.owl#"
-     xmlns:j.0="http://www.owl-ontologies.com/turismo.owl#"
-     xmlns:far="http://vitro.mannlib.cornell.edu/ns/reporting#"
-     xmlns:sf="http://sourceforge.net/api/sfelements.rdf#"
-     xmlns:display="http://vitro.mannlib.cornell.edu/ontologies/display/1.1#"
-     xmlns:gfvo="http://www.biointerchange.org/gfvo#"
-     xmlns:j.3="http://www.opengis.net/ont/geosparql#"
-     xmlns:j.2="http://inspire.jrc.ec.europa.eu/schemas/base/3.2/"
-     xmlns:owlapi="http://www.semanticweb.org/owlapi#"
-     xmlns:fam="http://a.com/ontology#"
-     xmlns:investopedia="http://protege.stanford.edu/investopedia#"
-     xmlns:exergame-exercise="http://www.fitforall.gr/ontology/exergame-exercise#"
-     xmlns:sweet="http://sweet.jpl.nasa.gov/2.3/sweetAll.owl#"
-     xmlns:food="http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#"
-     xmlns:sce="http://vivoweb.org/ontology/SchoolOfContinuingEducation#"
-     xmlns:pizza="http://www.co-ode.org/ontologies/pizza/pizza.owl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:rdfsyn="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:socsci="http://vivo.library.cornell.edu/ns/vivo/socsci/0.1#"
-     xmlns:untitled-ontology-19="http://www.semanticweb.org/jkrammer/ontologies/2014/3/untitled-ontology-19#"
-     xmlns:fma="&obo;fma#"
-     xmlns:ktometa="http://www.yso.fi/onto/kto-meta/"
-     xmlns:this="http://ontovibe.visualdataweb.org/1.0#"
-     xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:hr="http://vivo.cornell.edu/ns/hr/0.9/hr.owl#"
-     xmlns:other="http://ontovibe.visualdataweb.org/1.0/imported#"
-     xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
-     xmlns:taskex="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#"
-     xmlns:paper="http://www.icecoolfire.com#"
-     xmlns:scirr="http://vivoweb.org/ontology/scientific-research-resource#"
-     xmlns:www="http://www.movieontology.org/2009/11/09/"
-     xmlns:pubmed="http://vitro.mannlib.cornell.edu/ns/pubmed#"
-     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
-     xmlns:knowrob="http://ias.cs.tum.edu/kb/knowrob.owl#"
-     xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+<rdf:RDF xmlns="http://www.semanticweb.org/joke_ontology#"
+     xml:base="http://www.semanticweb.org/joke_ontology"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:ysotranslate="http://www.yso.fi/onto/yso-translate/"
-     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
-     xmlns:vom="http://vocab.arvida.de/2014/03/vom/vocab#"
-     xmlns:wos="http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#"
-     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
-     xmlns:cflow="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#"
-     xmlns:timeint="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
-     xmlns:valometa="http://www.yso.fi/onto/valo-meta/"
-     xmlns:isothes="http://purl.org/iso25964/skos-thes#"
-     xmlns:error="http://www.essepuntato.it/2009/10/error/"
-     xmlns:acfoo="http://acme.example.com/foo"
-     xmlns:camera="http://www.xfront.com/owl/ontologies/camera/#"
-     xmlns:resource="http://dbpedia.org/resource/"
-     xmlns:degrees="&bibo;degrees/"
-     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
-     xmlns:kauno="http://www.yso.fi/onto/kauno/"
-     xmlns:kito="http://www.yso.fi/onto/kito/"
-     xmlns:ns1="http://art.uniroma2.it/ontologies/vocbench#"
-     xmlns:owl_time="http://www.w3.org/2006/time#"
-     xmlns:dctype="http://purl.org/dc/dcmitype/"
-     xmlns:skos2="http://www.w3.org/2008/05/skos#"
-     xmlns:ns0="http://aims.fao.org/aos/agrontology#"
-     xmlns:seq="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"
-     xmlns:provdc="http://www.w3.org/ns/prov-dc#"
-     xmlns:kulometa="http://www.yso.fi/onto/kulo-meta/"
-     xmlns:tisit="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
-     xmlns:afometa="http://www.yso.fi/onto/afo-meta/"
-     xmlns:bevon="http://rdfs.co/bevon/"
-     xmlns:local="http://vivo.cornell.edu/ontology/local#"
-     xmlns:twi="http://tw.rpi.edu/instances/"
-     xmlns:act="http://pervasive.semanticweb.org/ont/action#"
-     xmlns:dsd="http://people.lis.illinois.edu/~ddubin/resource/example/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:juhometa="http://www.yso.fi/onto/juho-meta/">
-    <Ontology rdfsyn:about="http://www.semanticweb.org/joke_ontology">
-        <dcelem:description>The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.</dcelem:description>
-        <dcelem:title>Friend of a Friend (FOAF) vocabulary</dcelem:title>
-        <imports rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Ontology>
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/joke_ontology">
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
     
 
 
@@ -410,25 +38,25 @@
 
     <!-- http://xmlns.com/foaf/0.1/membershipClass -->
 
-    <AnnotationProperty rdfsyn:about="&foaf;membershipClass">
+    <owl:AnnotationProperty rdf:about="&foaf;membershipClass">
         <rdfs:label>membershipClass</rdfs:label>
-        <swvs:term_status>unstable</swvs:term_status>
+        <ns:term_status>unstable</ns:term_status>
         <rdfs:comment>Indicates the class of individuals that are a member of a Group</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </AnnotationProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
-    <rdfsyn:Description rdfsyn:about="&foaf;name">
+    <rdf:Description rdf:about="&foaf;name">
         <rdfs:label>name</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A name for some thing.</rdfs:comment>
-        <rdfs:subPropertyOf rdfsyn:resource="&rdfs;label"/>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </rdfsyn:Description>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </rdf:Description>
     
 
 
@@ -445,582 +73,582 @@
 
     <!-- http://www.semanticweb.org/joke_ontology#hasAudioFormat -->
 
-    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#hasAudioFormat">
-        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Audio"/>
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#AudioJoke"/>
-    </ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joke_ontology#hasAudioFormat">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joke_ontology#Audio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#AudioJoke"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#hasAuthor -->
 
-    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#hasAuthor">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-        <rdfs:range rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joke_ontology#hasAuthor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+        <rdfs:range rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#hasGenre -->
 
-    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#hasGenre">
-        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Genre"/>
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-    </ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joke_ontology#hasGenre">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joke_ontology#Genre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#hasImageFormat -->
 
-    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#hasImageFormat">
-        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Image"/>
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#ImageJoke"/>
-    </ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joke_ontology#hasImageFormat">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joke_ontology#Image"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#ImageJoke"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#hasVideoFormat -->
 
-    <ObjectProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#hasVideoFormat">
-        <rdfs:range rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Video"/>
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#VideoJoke"/>
-    </ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joke_ontology#hasVideoFormat">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joke_ontology#Video"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#VideoJoke"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/account -->
 
-    <ObjectProperty rdfsyn:about="&foaf;account">
+    <owl:ObjectProperty rdf:about="&foaf;account">
         <rdfs:label>account</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>Indicates an account held by this agent.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-        <rdfs:range rdfsyn:resource="&foaf;OnlineAccount"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+        <rdfs:range rdf:resource="&foaf;OnlineAccount"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/accountServiceHomepage -->
 
-    <ObjectProperty rdfsyn:about="&foaf;accountServiceHomepage">
+    <owl:ObjectProperty rdf:about="&foaf;accountServiceHomepage">
         <rdfs:label>account service homepage</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>Indicates a homepage of the service provide for this online account.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:domain rdfsyn:resource="&foaf;OnlineAccount"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:domain rdf:resource="&foaf;OnlineAccount"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/aimChatID -->
 
-    <ObjectProperty rdfsyn:about="&foaf;aimChatID">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;aimChatID">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>AIM chat ID</rdfs:label>
         <rdfs:comment>An AIM chat ID</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/based_near -->
 
-    <ObjectProperty rdfsyn:about="&foaf;based_near">
+    <owl:ObjectProperty rdf:about="&foaf;based_near">
         <rdfs:label>based near</rdfs:label>
         <rdfs:comment>A location that something is based near, for some broadly human notion of near.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:domain rdfsyn:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <rdfs:range rdfsyn:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/currentProject -->
 
-    <ObjectProperty rdfsyn:about="&foaf;currentProject">
+    <owl:ObjectProperty rdf:about="&foaf;currentProject">
         <rdfs:label>current project</rdfs:label>
         <rdfs:comment>A current project this person works on.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/depiction -->
 
-    <ObjectProperty rdfsyn:about="&foaf;depiction">
+    <owl:ObjectProperty rdf:about="&foaf;depiction">
         <rdfs:label>depiction</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A depiction of some thing.</rdfs:comment>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Image"/>
-        <inverseOf rdfsyn:resource="&foaf;depicts"/>
-    </ObjectProperty>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Image"/>
+        <owl:inverseOf rdf:resource="&foaf;depicts"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/depicts -->
 
-    <ObjectProperty rdfsyn:about="&foaf;depicts">
+    <owl:ObjectProperty rdf:about="&foaf;depicts">
         <rdfs:label>depicts</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A thing depicted in this representation.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Image"/>
-    </ObjectProperty>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Image"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/focus -->
 
-    <ObjectProperty rdfsyn:about="&foaf;focus">
+    <owl:ObjectProperty rdf:about="&foaf;focus">
         <rdfs:label>focus</rdfs:label>
         <rdfs:comment>The underlying or &apos;focal&apos; entity associated with some SKOS-described concept.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:domain rdfsyn:resource="&skos;Concept"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/fundedBy -->
 
-    <ObjectProperty rdfsyn:about="&foaf;fundedBy">
+    <owl:ObjectProperty rdf:about="&foaf;fundedBy">
         <rdfs:label>funded by</rdfs:label>
-        <swvs:term_status>archaic</swvs:term_status>
+        <ns:term_status>archaic</ns:term_status>
         <rdfs:comment>An organization funding a project or person.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </ObjectProperty>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/holdsAccount -->
 
-    <ObjectProperty rdfsyn:about="&foaf;holdsAccount">
+    <owl:ObjectProperty rdf:about="&foaf;holdsAccount">
         <rdfs:label>account</rdfs:label>
         <rdfs:comment>Indicates an account held by this agent.</rdfs:comment>
-        <swvs:term_status>archaic</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-        <rdfs:range rdfsyn:resource="&foaf;OnlineAccount"/>
-    </ObjectProperty>
+        <ns:term_status>archaic</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+        <rdfs:range rdf:resource="&foaf;OnlineAccount"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/homepage -->
 
-    <ObjectProperty rdfsyn:about="&foaf;homepage">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;homepage">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>homepage</rdfs:label>
-        <swvs:term_status>stable</swvs:term_status>
+        <ns:term_status>stable</ns:term_status>
         <rdfs:comment>A homepage for some thing.</rdfs:comment>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;isPrimaryTopicOf"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;page"/>
-    </ObjectProperty>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;isPrimaryTopicOf"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;page"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/icqChatID -->
 
-    <ObjectProperty rdfsyn:about="&foaf;icqChatID">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;icqChatID">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>ICQ chat ID</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>An ICQ chat ID</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/img -->
 
-    <ObjectProperty rdfsyn:about="&foaf;img">
+    <owl:ObjectProperty rdf:about="&foaf;img">
         <rdfs:label>image</rdfs:label>
         <rdfs:comment>An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one&apos;s photo on a homepage).</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Image"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;depiction"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Image"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;depiction"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/interest -->
 
-    <ObjectProperty rdfsyn:about="&foaf;interest">
+    <owl:ObjectProperty rdf:about="&foaf;interest">
         <rdfs:label>interest</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A page about a topic of interest to this person.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/isPrimaryTopicOf -->
 
-    <ObjectProperty rdfsyn:about="&foaf;isPrimaryTopicOf">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;isPrimaryTopicOf">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>is primary topic of</rdfs:label>
         <rdfs:comment>A document that this thing is the primary topic of.</rdfs:comment>
-        <swvs:term_status>stable</swvs:term_status>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;page"/>
-    </ObjectProperty>
+        <ns:term_status>stable</ns:term_status>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;page"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/jabberID -->
 
-    <ObjectProperty rdfsyn:about="&foaf;jabberID">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;jabberID">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>jabber ID</rdfs:label>
         <rdfs:comment>A jabber ID for something.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/knows -->
 
-    <ObjectProperty rdfsyn:about="&foaf;knows">
+    <owl:ObjectProperty rdf:about="&foaf;knows">
         <rdfs:label>knows</rdfs:label>
-        <swvs:term_status>stable</swvs:term_status>
+        <ns:term_status>stable</ns:term_status>
         <rdfs:comment>A person known by this person (indicating some level of reciprocated interaction between the parties).</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-        <rdfs:range rdfsyn:resource="&foaf;Person"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+        <rdfs:range rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/logo -->
 
-    <ObjectProperty rdfsyn:about="&foaf;logo">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;logo">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>logo</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A logo representing some thing.</rdfs:comment>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </ObjectProperty>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/made -->
 
-    <ObjectProperty rdfsyn:about="&foaf;made">
+    <owl:ObjectProperty rdf:about="&foaf;made">
         <rdfs:label>made</rdfs:label>
         <rdfs:comment>Something that was made by this agent.</rdfs:comment>
-        <swvs:term_status>stable</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <ns:term_status>stable</ns:term_status>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/maker -->
 
-    <ObjectProperty rdfsyn:about="&foaf;maker">
+    <owl:ObjectProperty rdf:about="&foaf;maker">
         <rdfs:label>maker</rdfs:label>
-        <swvs:term_status>stable</swvs:term_status>
+        <ns:term_status>stable</ns:term_status>
         <rdfs:comment>An agent that made this thing.</rdfs:comment>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Agent"/>
-        <inverseOf rdfsyn:resource="&foaf;made"/>
-    </ObjectProperty>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Agent"/>
+        <owl:inverseOf rdf:resource="&foaf;made"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/mbox -->
 
-    <ObjectProperty rdfsyn:about="&foaf;mbox">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;mbox">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>personal mailbox</rdfs:label>
-        <swvs:term_status>stable</swvs:term_status>
+        <ns:term_status>stable</ns:term_status>
         <rdfs:comment>A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a &apos;static inverse functional property&apos;, in that there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/mbox_sha1sum -->
 
-    <ObjectProperty rdfsyn:about="&foaf;mbox_sha1sum">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;mbox_sha1sum">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>sha1sum of a personal mailbox URI name</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the first owner of the mailbox.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/member -->
 
-    <ObjectProperty rdfsyn:about="&foaf;member">
+    <owl:ObjectProperty rdf:about="&foaf;member">
         <rdfs:label>member</rdfs:label>
-        <swvs:term_status>stable</swvs:term_status>
+        <ns:term_status>stable</ns:term_status>
         <rdfs:comment>Indicates a member of a Group</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Agent"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Group"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Agent"/>
+        <rdfs:domain rdf:resource="&foaf;Group"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/msnChatID -->
 
-    <ObjectProperty rdfsyn:about="&foaf;msnChatID">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;msnChatID">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>MSN chat ID</rdfs:label>
         <rdfs:comment>An MSN chat ID</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/openid -->
 
-    <ObjectProperty rdfsyn:about="&foaf;openid">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;openid">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>openid</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>An OpenID for an Agent.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;isPrimaryTopicOf"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;isPrimaryTopicOf"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/page -->
 
-    <ObjectProperty rdfsyn:about="&foaf;page">
+    <owl:ObjectProperty rdf:about="&foaf;page">
         <rdfs:label>page</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A page or document about this thing.</rdfs:comment>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <inverseOf rdfsyn:resource="&foaf;topic"/>
-    </ObjectProperty>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <owl:inverseOf rdf:resource="&foaf;topic"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/pastProject -->
 
-    <ObjectProperty rdfsyn:about="&foaf;pastProject">
+    <owl:ObjectProperty rdf:about="&foaf;pastProject">
         <rdfs:label>past project</rdfs:label>
         <rdfs:comment>A project this person has previously worked on.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/phone -->
 
-    <ObjectProperty rdfsyn:about="&foaf;phone">
+    <owl:ObjectProperty rdf:about="&foaf;phone">
         <rdfs:label>phone</rdfs:label>
         <rdfs:comment>A phone, specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel).</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
 
-    <ObjectProperty rdfsyn:about="&foaf;primaryTopic">
-        <rdfsyn:type rdfsyn:resource="&owl;FunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;primaryTopic">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label>primary topic</rdfs:label>
         <rdfs:comment>The primary topic of some page or document.</rdfs:comment>
-        <swvs:term_status>stable</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Document"/>
-        <inverseOf rdfsyn:resource="&foaf;isPrimaryTopicOf"/>
-    </ObjectProperty>
+        <ns:term_status>stable</ns:term_status>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Document"/>
+        <owl:inverseOf rdf:resource="&foaf;isPrimaryTopicOf"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/publications -->
 
-    <ObjectProperty rdfsyn:about="&foaf;publications">
+    <owl:ObjectProperty rdf:about="&foaf;publications">
         <rdfs:label>publications</rdfs:label>
         <rdfs:comment>A link to the publications of this person.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/schoolHomepage -->
 
-    <ObjectProperty rdfsyn:about="&foaf;schoolHomepage">
+    <owl:ObjectProperty rdf:about="&foaf;schoolHomepage">
         <rdfs:label>schoolHomepage</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A homepage of a school attended by the person.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/theme -->
 
-    <ObjectProperty rdfsyn:about="&foaf;theme">
+    <owl:ObjectProperty rdf:about="&foaf;theme">
         <rdfs:label>theme</rdfs:label>
-        <swvs:term_status>archaic</swvs:term_status>
+        <ns:term_status>archaic</ns:term_status>
         <rdfs:comment>A theme.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:domain rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </ObjectProperty>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/thumbnail -->
 
-    <ObjectProperty rdfsyn:about="&foaf;thumbnail">
+    <owl:ObjectProperty rdf:about="&foaf;thumbnail">
         <rdfs:label>thumbnail</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A derived thumbnail image.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Image"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Image"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Image"/>
+        <rdfs:domain rdf:resource="&foaf;Image"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/tipjar -->
 
-    <ObjectProperty rdfsyn:about="&foaf;tipjar">
+    <owl:ObjectProperty rdf:about="&foaf;tipjar">
         <rdfs:label>tipjar</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A tipjar document for this agent, describing means for payment and reward.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;page"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;page"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/topic -->
 
-    <ObjectProperty rdfsyn:about="&foaf;topic">
+    <owl:ObjectProperty rdf:about="&foaf;topic">
         <rdfs:label>topic</rdfs:label>
         <rdfs:comment>A topic of some page or document.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Document"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Document"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/topic_interest -->
 
-    <ObjectProperty rdfsyn:about="&foaf;topic_interest">
+    <owl:ObjectProperty rdf:about="&foaf;topic_interest">
         <rdfs:label>topic_interest</rdfs:label>
         <rdfs:comment>A thing of interest to this person.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/weblog -->
 
-    <ObjectProperty rdfsyn:about="&foaf;weblog">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;weblog">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>weblog</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A weblog of some thing (whether person, group, company etc.).</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;page"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;page"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/workInfoHomepage -->
 
-    <ObjectProperty rdfsyn:about="&foaf;workInfoHomepage">
+    <owl:ObjectProperty rdf:about="&foaf;workInfoHomepage">
         <rdfs:label>work info homepage</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A work info homepage of some person; a page about their work for some organization.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </ObjectProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/workplaceHomepage -->
 
-    <ObjectProperty rdfsyn:about="&foaf;workplaceHomepage">
+    <owl:ObjectProperty rdf:about="&foaf;workplaceHomepage">
         <rdfs:label>workplace homepage</rdfs:label>
         <rdfs:comment>A workplace homepage of some person; the homepage of an organization they work for.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:range rdfsyn:resource="&foaf;Document"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:range rdf:resource="&foaf;Document"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/yahooChatID -->
 
-    <ObjectProperty rdfsyn:about="&foaf;yahooChatID">
-        <rdfsyn:type rdfsyn:resource="&owl;InverseFunctionalProperty"/>
+    <owl:ObjectProperty rdf:about="&foaf;yahooChatID">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label>Yahoo chat ID</rdfs:label>
         <rdfs:comment>A Yahoo chat ID</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </ObjectProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
     
 
 
@@ -1037,415 +665,415 @@
 
     <!-- http://www.semanticweb.org/joke_ontology#content -->
 
-    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#content">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#TextJoke"/>
-        <rdfs:range rdfsyn:resource="&xs;#string"/>
-    </DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joke_ontology#content">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#TextJoke"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#date -->
 
-    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#date">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-        <rdfs:range rdfsyn:resource="&xs;#dateTime"/>
-    </DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joke_ontology#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#description -->
 
-    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#description">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-        <rdfs:range rdfsyn:resource="&xs;#string"/>
-    </DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joke_ontology#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#isForAdults -->
 
-    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#isForAdults">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-        <rdfs:range rdfsyn:resource="&xs;#boolean"/>
-    </DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joke_ontology#isForAdults">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#jokeName -->
 
-    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#jokeName">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-    </DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joke_ontology#jokeName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#language -->
 
-    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#language">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-        <rdfs:range rdfsyn:resource="&xs;#language"/>
-    </DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joke_ontology#language">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+        <rdfs:range rdf:resource="&xsd;language"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#name -->
 
-    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#name">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Genre"/>
-        <rdfs:range rdfsyn:resource="&xs;#string"/>
-    </DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joke_ontology#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Genre"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#url -->
 
-    <DatatypeProperty rdfsyn:about="http://www.semanticweb.org/joke_ontology#url">
-        <rdfs:domain rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-        <rdfs:range rdfsyn:resource="&xs;#anyURI"/>
-    </DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joke_ontology#url">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/accountName -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;accountName">
+    <owl:DatatypeProperty rdf:about="&foaf;accountName">
         <rdfs:label>account name</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>Indicates the name (identifier) associated with this online account.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;OnlineAccount"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;OnlineAccount"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/age -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;age">
-        <rdfsyn:type rdfsyn:resource="&owl;FunctionalProperty"/>
+    <owl:DatatypeProperty rdf:about="&foaf;age">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label>age</rdfs:label>
-        <swvs:term_status>unstable</swvs:term_status>
+        <ns:term_status>unstable</ns:term_status>
         <rdfs:comment>The age in years of some agent.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/aimChatID -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;aimChatID">
+    <owl:DatatypeProperty rdf:about="&foaf;aimChatID">
         <rdfs:label>AIM chat ID</rdfs:label>
         <rdfs:comment>An AIM chat ID</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;nick"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;nick"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/birthday -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;birthday">
-        <rdfsyn:type rdfsyn:resource="&owl;FunctionalProperty"/>
+    <owl:DatatypeProperty rdf:about="&foaf;birthday">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label>birthday</rdfs:label>
-        <swvs:term_status>unstable</swvs:term_status>
+        <ns:term_status>unstable</ns:term_status>
         <rdfs:comment>The birthday of this Agent, represented in mm-dd string form, eg. &apos;12-31&apos;.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/dnaChecksum -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;dnaChecksum">
+    <owl:DatatypeProperty rdf:about="&foaf;dnaChecksum">
         <rdfs:label>DNA checksum</rdfs:label>
         <rdfs:comment>A checksum for the DNA of some thing. Joke.</rdfs:comment>
-        <swvs:term_status>archaic</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </DatatypeProperty>
+        <ns:term_status>archaic</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/familyName -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;familyName">
+    <owl:DatatypeProperty rdf:about="&foaf;familyName">
         <rdfs:label>familyName</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>The family name of some person.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/family_name -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;family_name">
+    <owl:DatatypeProperty rdf:about="&foaf;family_name">
         <rdfs:label>family_name</rdfs:label>
-        <swvs:term_status>archaic</swvs:term_status>
+        <ns:term_status>archaic</ns:term_status>
         <rdfs:comment>The family name of some person.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/firstName -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;firstName">
+    <owl:DatatypeProperty rdf:about="&foaf;firstName">
         <rdfs:label>firstName</rdfs:label>
         <rdfs:comment>The first name of a person.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/geekcode -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;geekcode">
+    <owl:DatatypeProperty rdf:about="&foaf;geekcode">
         <rdfs:label>geekcode</rdfs:label>
-        <swvs:term_status>archaic</swvs:term_status>
+        <ns:term_status>archaic</ns:term_status>
         <rdfs:comment>A textual geekcode for this person, see http://www.geekcode.com/geek.html</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/gender -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;gender">
-        <rdfsyn:type rdfsyn:resource="&owl;FunctionalProperty"/>
+    <owl:DatatypeProperty rdf:about="&foaf;gender">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label>gender</rdfs:label>
         <rdfs:comment>The gender of this Agent (typically but not necessarily &apos;male&apos; or &apos;female&apos;).</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/givenName -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;givenName">
+    <owl:DatatypeProperty rdf:about="&foaf;givenName">
         <rdfs:label>Given name</rdfs:label>
         <rdfs:comment>The given name of some person.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/givenname -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;givenname">
+    <owl:DatatypeProperty rdf:about="&foaf;givenname">
         <rdfs:label>Given name</rdfs:label>
         <rdfs:comment>The given name of some person.</rdfs:comment>
-        <swvs:term_status>archaic</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </DatatypeProperty>
+        <ns:term_status>archaic</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/icqChatID -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;icqChatID">
+    <owl:DatatypeProperty rdf:about="&foaf;icqChatID">
         <rdfs:label>ICQ chat ID</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>An ICQ chat ID</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;nick"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;nick"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/jabberID -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;jabberID">
+    <owl:DatatypeProperty rdf:about="&foaf;jabberID">
         <rdfs:label>jabber ID</rdfs:label>
         <rdfs:comment>A jabber ID for something.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/lastName -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;lastName">
+    <owl:DatatypeProperty rdf:about="&foaf;lastName">
         <rdfs:label>lastName</rdfs:label>
         <rdfs:comment>The last name of a person.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/mbox_sha1sum -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;mbox_sha1sum">
+    <owl:DatatypeProperty rdf:about="&foaf;mbox_sha1sum">
         <rdfs:label>sha1sum of a personal mailbox URI name</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the first owner of the mailbox.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/msnChatID -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;msnChatID">
+    <owl:DatatypeProperty rdf:about="&foaf;msnChatID">
         <rdfs:label>MSN chat ID</rdfs:label>
         <rdfs:comment>An MSN chat ID</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;nick"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;nick"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/myersBriggs -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;myersBriggs">
+    <owl:DatatypeProperty rdf:about="&foaf;myersBriggs">
         <rdfs:label>myersBriggs</rdfs:label>
         <rdfs:comment>A Myers Briggs (MBTI) personality classification.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;name">
+    <owl:DatatypeProperty rdf:about="&foaf;name">
         <rdfs:label>name</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A name for some thing.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/nick -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;nick">
+    <owl:DatatypeProperty rdf:about="&foaf;nick">
         <rdfs:label>nickname</rdfs:label>
         <rdfs:comment>A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/plan -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;plan">
+    <owl:DatatypeProperty rdf:about="&foaf;plan">
         <rdfs:label>plan</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A .plan comment, in the tradition of finger and &apos;.plan&apos; files.</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/sha1 -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;sha1">
+    <owl:DatatypeProperty rdf:about="&foaf;sha1">
         <rdfs:label>sha1sum (hex)</rdfs:label>
         <rdfs:comment>A sha1sum hash, in hex.</rdfs:comment>
-        <swvs:term_status>unstable</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Document"/>
-    </DatatypeProperty>
+        <ns:term_status>unstable</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Document"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/skypeID -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;skypeID">
+    <owl:DatatypeProperty rdf:about="&foaf;skypeID">
         <rdfs:label>Skype ID</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A Skype ID</rdfs:comment>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;nick"/>
-    </DatatypeProperty>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;nick"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/status -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;status">
+    <owl:DatatypeProperty rdf:about="&foaf;status">
         <rdfs:label>status</rdfs:label>
         <rdfs:comment>A string expressing what the user is happy for the general public (normally) to know about their current activity.</rdfs:comment>
-        <swvs:term_status>unstable</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Agent"/>
-    </DatatypeProperty>
+        <ns:term_status>unstable</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/surname -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;surname">
+    <owl:DatatypeProperty rdf:about="&foaf;surname">
         <rdfs:label>Surname</rdfs:label>
         <rdfs:comment>The surname of some person.</rdfs:comment>
-        <swvs:term_status>archaic</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:domain rdfsyn:resource="&foaf;Person"/>
-    </DatatypeProperty>
+        <ns:term_status>archaic</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/title -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;title">
+    <owl:DatatypeProperty rdf:about="&foaf;title">
         <rdfs:label>title</rdfs:label>
-        <swvs:term_status>testing</swvs:term_status>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>Title (Mr, Mrs, Ms, Dr. etc)</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </DatatypeProperty>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/yahooChatID -->
 
-    <DatatypeProperty rdfsyn:about="&foaf;yahooChatID">
+    <owl:DatatypeProperty rdf:about="&foaf;yahooChatID">
         <rdfs:label>Yahoo chat ID</rdfs:label>
         <rdfs:comment>A Yahoo chat ID</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:range rdfsyn:resource="&rdfs;Literal"/>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-        <rdfs:subPropertyOf rdfsyn:resource="&foaf;nick"/>
-    </DatatypeProperty>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:subPropertyOf rdf:resource="&foaf;nick"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -1462,243 +1090,244 @@
 
     <!-- http://purl.org/dc/terms/Agent -->
 
-    <rdfsyn:Description rdfsyn:about="&dcterms;Agent">
-        <equivalentClass rdfsyn:resource="&foaf;Agent"/>
-    </rdfsyn:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+        <owl:equivalentClass rdf:resource="&foaf;Agent"/>
+    </rdf:Description>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#Audio -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#Audio">
-        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Format"/>
-    </Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joke_ontology#Format"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#AudioJoke -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#AudioJoke">
-        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-    </Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#AudioJoke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#Format -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#Format"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#Format"/>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#Genre -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#Genre"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#Genre"/>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#Image -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#Image">
-        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Format"/>
-    </Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#Image">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joke_ontology#Format"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#ImageJoke -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#ImageJoke">
-        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-    </Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#ImageJoke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#Joke -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#Joke"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#Joke"/>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#TextJoke -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#TextJoke">
-        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-    </Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#TextJoke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#Video -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#Video">
-        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Format"/>
-    </Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#Video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joke_ontology#Format"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/joke_ontology#VideoJoke -->
 
-    <Class rdfsyn:about="http://www.semanticweb.org/joke_ontology#VideoJoke">
-        <rdfs:subClassOf rdfsyn:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
-    </Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/joke_ontology#VideoJoke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joke_ontology#Joke"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
-    <Class rdfsyn:about="&foaf;Agent">
+    <owl:Class rdf:about="&foaf;Agent">
         <rdfs:label>Agent</rdfs:label>
-        <swvs:term_status>stable</swvs:term_status>
+        <ns:term_status>stable</ns:term_status>
         <rdfs:comment>An agent (eg. person, group, software or physical artifact).</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Document -->
 
-    <Class rdfsyn:about="&foaf;Document">
+    <owl:Class rdf:about="&foaf;Document">
         <rdfs:label>Document</rdfs:label>
-        <disjointWith rdfsyn:resource="&foaf;Organization"/>
-        <disjointWith rdfsyn:resource="&foaf;Project"/>
-        <swvs:term_status>testing</swvs:term_status>
+        <owl:disjointWith rdf:resource="&foaf;Organization"/>
+        <owl:disjointWith rdf:resource="&foaf;Project"/>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>A document.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Group -->
 
-    <Class rdfsyn:about="&foaf;Group">
+    <owl:Class rdf:about="&foaf;Group">
         <rdfs:label>Group</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="&foaf;Agent"/>
+        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
         <rdfs:comment>A class of Agents.</rdfs:comment>
-        <swvs:term_status>stable</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <ns:term_status>stable</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Image -->
 
-    <Class rdfsyn:about="&foaf;Image">
+    <owl:Class rdf:about="&foaf;Image">
         <rdfs:label>Image</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="&foaf;Document"/>
-        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:subClassOf rdf:resource="&foaf;Document"/>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>An image.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/LabelProperty -->
 
-    <Class rdfsyn:about="&foaf;LabelProperty">
+    <owl:Class rdf:about="&foaf;LabelProperty">
         <rdfs:label>Label Property</rdfs:label>
-        <swvs:term_status>unstable</swvs:term_status>
+        <ns:term_status>unstable</ns:term_status>
         <rdfs:comment>A foaf:LabelProperty is any RDF property with texual values that serve as labels.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/OnlineAccount -->
 
-    <Class rdfsyn:about="&foaf;OnlineAccount">
+    <owl:Class rdf:about="&foaf;OnlineAccount">
         <rdfs:label>Online Account</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="&owl;Thing"/>
-        <swvs:term_status>testing</swvs:term_status>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <ns:term_status>testing</ns:term_status>
         <rdfs:comment>An online account.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/OnlineChatAccount -->
 
-    <Class rdfsyn:about="&foaf;OnlineChatAccount">
+    <owl:Class rdf:about="&foaf;OnlineChatAccount">
         <rdfs:label>Online Chat Account</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="&foaf;OnlineAccount"/>
-        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:subClassOf rdf:resource="&foaf;OnlineAccount"/>
+        <ns:term_status>unstable</ns:term_status>
         <rdfs:comment>An online chat account.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/OnlineEcommerceAccount -->
 
-    <Class rdfsyn:about="&foaf;OnlineEcommerceAccount">
+    <owl:Class rdf:about="&foaf;OnlineEcommerceAccount">
         <rdfs:label>Online E-commerce Account</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="&foaf;OnlineAccount"/>
-        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:subClassOf rdf:resource="&foaf;OnlineAccount"/>
+        <ns:term_status>unstable</ns:term_status>
         <rdfs:comment>An online e-commerce account.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/OnlineGamingAccount -->
 
-    <Class rdfsyn:about="&foaf;OnlineGamingAccount">
+    <owl:Class rdf:about="&foaf;OnlineGamingAccount">
         <rdfs:label>Online Gaming Account</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="&foaf;OnlineAccount"/>
-        <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:subClassOf rdf:resource="&foaf;OnlineAccount"/>
+        <ns:term_status>unstable</ns:term_status>
         <rdfs:comment>An online gaming account.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
-    <Class rdfsyn:about="&foaf;Organization">
+    <owl:Class rdf:about="&foaf;Organization">
         <rdfs:label>Organization</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="&foaf;Agent"/>
-        <disjointWith rdfsyn:resource="&foaf;Person"/>
-        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
+        <owl:disjointWith rdf:resource="&foaf;Person"/>
+        <ns:term_status>stable</ns:term_status>
         <rdfs:comment>An organization.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
-    <Class rdfsyn:about="&foaf;Person">
+    <owl:Class rdf:about="&foaf;Person">
         <rdfs:label>Person</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
-        <rdfs:subClassOf rdfsyn:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <rdfs:subClassOf rdfsyn:resource="&foaf;Agent"/>
-        <disjointWith rdfsyn:resource="&foaf;Project"/>
-        <swvs:term_status>stable</swvs:term_status>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
+        <owl:disjointWith rdf:resource="&foaf;Project"/>
+        <ns:term_status>stable</ns:term_status>
         <rdfs:comment>A person.</rdfs:comment>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/PersonalProfileDocument -->
 
-    <Class rdfsyn:about="&foaf;PersonalProfileDocument">
+    <owl:Class rdf:about="&foaf;PersonalProfileDocument">
         <rdfs:label>PersonalProfileDocument</rdfs:label>
-        <rdfs:subClassOf rdfsyn:resource="&foaf;Document"/>
+        <rdfs:subClassOf rdf:resource="&foaf;Document"/>
         <rdfs:comment>A personal profile RDF document.</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Project -->
 
-    <Class rdfsyn:about="&foaf;Project">
+    <owl:Class rdf:about="&foaf;Project">
         <rdfs:label>Project</rdfs:label>
         <rdfs:comment>A project (a collective endeavour of some kind).</rdfs:comment>
-        <swvs:term_status>testing</swvs:term_status>
-        <rdfs:isDefinedBy rdfsyn:resource="http://xmlns.com/foaf/0.1/"/>
-    </Class>
-</rdfsyn:RDF>
+        <ns:term_status>testing</ns:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
+</rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

@@ -20,6 +20,7 @@ class JokeGenerator(object):
             print(self.genres)
         except:
             print("{0:s} is not a valid rdf file.".format(rdf))
+            quit()
 
     @cherrypy.expose
     def index(self):
