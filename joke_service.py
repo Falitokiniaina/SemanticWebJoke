@@ -58,20 +58,9 @@ class JokeGenerator(object):
                 <link href="/css/style.css" rel="stylesheet">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
                 <script >
-                    var voices = [];
                     $(document).ready(function() {{
-                        var ischrome = navigator.userAgent.match(/chrome/i);
-                        if(ischrome) {{
-                            var u = new SpeechSynthesisUtterance({1});
-                            u.lang = 'en-US';
-                            u.pitch = 1;
-                            u.rate = 1;
-                            u.voice = voices[10];
-                            u.voiceURI = 'native';
-                            u.volume = 1;
-                            speechSynthesis.speak(u);
-                            console.log("Voice " + u.voice.name);
-                        }}
+                        var u = new SpeechSynthesisUtterance("{1}");
+                        window.speechSynthesis.speak(u);
                     }});
                 </script>
             </head>
