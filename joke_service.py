@@ -40,7 +40,7 @@ class JokeGenerator(object):
                 max_sim = 0
                 for term in genre.split(' '):
                     term_sim = self.wordNetSimilarity(topic, term)
-                    if term_sim > term_sim:
+                    if term_sim > max_sim:
                         max_sim = term_sim
                 similarity[genre] = max_sim
         #get best genre for the user
@@ -85,16 +85,21 @@ class JokeGenerator(object):
     
     def wordNetSimilarity(self, term1, term2):
         #http://www.nltk.org/howto/wordnet.html
+        sim = None
         try:
-            wn_term1 = wn.synset(term1 + ".n.01")
-            wn_term2 = wn.synset(term2 + ".n.01")
+            wn_term1 = wn.synsets(term1)[0] #+ ".n.01")
+            wn_term2 = wn.synsets(term2)[0] #+ ".n.01")
             sim = wn.path_similarity(wn_term1, wn_term2)
         except:
+            print("Error computing similarity.")
+        if not sim:
             sim = 0
         return sim
         
     def getGenres(self):
-        q = "SELECT ?name WHERE {{ ?genre a <http://www.semanticweb.org/joke_ontology#Genre>. ?genre jo:name ?name }}"
+        q = "PREFIX jo:<http://www.semanticweb.org/joke_ontology#> " \
+            "SELECT ?name WHERE {{ ?genre a <http://www.semanticweb.org/joke_ontology#Genre>. " \
+            "?genre jo:name ?name }}"
         r = self.g.query(q)
         cat = []
         for i in r:
@@ -102,7 +107,14 @@ class JokeGenerator(object):
         return cat
 
     def getJoke(self, genre):
-        q = "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/joke_ontology#TextJoke>. ?joke jo:content ?content. ?joke jo:hasGenre <http://www.semanticweb.org/joke_ontology#{0:s}> }}".format(genre)
+        q = "PREFIX jo:<http://www.semanticweb.org/joke_ontology#> " \
+            "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/joke_ontology#TextJoke> " \
+            ". ?joke jo:content ?content " \
+            ". ?joke jo:hasGenre ?genre "\
+            ". ?genre a <http://www.semanticweb.org/joke_ontology#genre> " \
+            ". ?genre jo:name '{0:s}' }}".format(genre)
+
+        print(q)
         r = self.g.query(q)
         jokes = []
         for i in r:
@@ -118,5 +130,5 @@ def argmax(d):
         
         
 if __name__ == '__main__':
-    rdf_file = "joke_ontology_rdf.owl"
+    rdf_file = "new_owl.owl"
     cherrypy.quickstart(JokeGenerator(rdf=rdf_file))

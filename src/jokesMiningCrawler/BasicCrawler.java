@@ -49,7 +49,7 @@ public class BasicCrawler extends WebCrawler {
   public BasicCrawler() {
 	super();
 	BasicCrawler.model = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM );      
-	BasicCrawler.model.read( "jokeOntology_rdf.owl", "RDF/XML" );	
+	BasicCrawler.model.read( "joke_ontology_rdf.owl", "RDF/XML" );	
 	
 	ExtendedIterator classes = BasicCrawler.model.listClasses();
 	String textJokeClass = "";
@@ -72,11 +72,11 @@ public class BasicCrawler extends WebCrawler {
 	this.nameGenreProp = model.getOntProperty(NS+"name");
 	this.dateProp = model.getOntProperty(NS+"date");
 	date = new Date();
-	try  {
-	  output = new FileOutputStream( "new_owl.owl");     
-	} catch(Exception e) {
-			System.out.println("ERRRRRRRRRRRRRRRRRRRROOOOOOOOOOOORRRRR : writing on new_owl.owl");
-	}  	
+//	try  {
+//	  output = new FileOutputStream( "new_owl.owl");     
+//	} catch(Exception e) {
+//			System.out.println("ERRRRRRRRRRRRRRRRRRRROOOOOOOOOOOORRRRR : writing on new_owl.owl");
+//	}  	
   }  
   
   /**
@@ -148,25 +148,27 @@ public class BasicCrawler extends WebCrawler {
           System.out.println("JOKE\n" + joke + "\n");
           System.out.println("URL\n" + jokeUrl + "\n");
                     
-  		 //GenreClassRes.createIndividual()          
-          String newGenre;
+   		 //GenreClassRes.createIndividual()          
+          String newGenreId, newGenreName;
           for (String s : jokeCategory) {        	
-        	  newGenre = this.clean_string(s);        	  
+        	  newGenreId = this.clean_string_id(s);
+        	  newGenreName = this.clean_string_name(s);
       		  ExtendedIterator instances = GenreClassRes.listInstances();
       		  boolean found = false;
       		  while (instances.hasNext())		
       			{		
       				Individual thisInstance = (Individual) instances.next();
-      				if(thisInstance.toString().endsWith(newGenre)){found=true; break;}      						
+      				if(thisInstance.toString().endsWith(newGenreId)){found=true; break;}      						
       			}	        	  
       		  if(!found){
-      			model.createIndividual(NS+newGenre, GenreClassRes)
-      			.addProperty(nameGenreProp, newGenre);;
+      			model.createIndividual(NS+newGenreId, GenreClassRes)
+      			.addProperty(nameGenreProp, newGenreName);;
       		  }              
-          }          
+          } 
+                 
                     
          //textJokeRes.createIndividual(NS+"#joke1")
-          String indivName = this.clean_string(jokeName);          
+          String indivName = this.clean_string_id(jokeName);          
           model.createIndividual(NS+indivName,textJokeRes)  			
           	.addProperty(nameProp, jokeName) 
 			.addProperty(descProp, jokeDesc)   
@@ -175,20 +177,38 @@ public class BasicCrawler extends WebCrawler {
 			.addProperty(dateProp, date.toString());
           Individual ind = model.getIndividual(NS+indivName);
           for (String s : jokeCategory) {        	  
-        	  newGenre = this.clean_string(s);        	  
-        	  ind.addProperty(model.getOntProperty(NS+"hasGenre"), model.getIndividual(NS+newGenre));
+        	  newGenreId = this.clean_string_id(s);        	  
+        	  ind.addProperty(model.getOntProperty(NS+"hasGenre"), model.getIndividual(NS+newGenreId));
           }           	                    			
   		//model.commit();
-  		model.writeAll(BasicCrawler.output, "TURTLE");  		
+//      	try  {
+//      	  output = new FileOutputStream( "new_owl.owl");
+//      	  model.writeAll(BasicCrawler.output, "RDF/XML");
+//      	} catch(Exception e) {
+//      			System.out.println("ERRRRRRRRRRRRRRRRRRRROOOOOOOOOOOORRRRR : writing on new_owl.owl");
+//      	}  		              		
       }      
     }
     Header[] responseHeaders = page.getFetchResponseHeaders();
     System.out.println("=============");
   }
   
-  private String clean_string(String s) {
-	  return s.replace("jokes","").replace("joke", "").replace(" ", "").replace("'", "").replace("&","").replace(";", "").toLowerCase();	
-}
+  private String clean_string_id(String s) {	  
+	  return s.replaceAll("[^A-Za-z0-9]","")			  
+			  .replace("jokes", "")
+			  .replace("joke", "")
+			  .replace(" ", "")			  
+			  .toLowerCase();
+  }
+  
+  private String clean_string_name(String s) {	  
+		  return s.replaceAll("['&;#$,.*%!:/]"," ")			  
+				  .replace("jokes", " ")
+				  .replace("joke", " ")
+				  .replace("\t", " ")
+				  .replace("  ", " ")
+				  .toLowerCase();		  
+  }
 
 public static String html2text(String html) {
     return Jsoup.parse(html).text();

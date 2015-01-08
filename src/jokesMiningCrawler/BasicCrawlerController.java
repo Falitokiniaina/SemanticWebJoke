@@ -18,6 +18,8 @@
 //package edu.uci.ics.crawler4j.examples.basic;
 package jokesMiningCrawler;
 
+import java.io.FileOutputStream;
+
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
@@ -34,7 +36,7 @@ import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
  */
 public class BasicCrawlerController {
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws Exception {	 	
     
     if (args.length != 2) {
       System.out.println("Needed parameters: ");
@@ -75,7 +77,7 @@ public class BasicCrawlerController {
      * You can set the maximum number of pages to crawl. The default value
      * is -1 for unlimited number of pages
      */
-    config.setMaxPagesToFetch(1000);
+    config.setMaxPagesToFetch(200);
 
     /*
      * Do you need to set a proxy? If so, you can use:
@@ -116,7 +118,13 @@ public class BasicCrawlerController {
      * Start the crawl. This is a blocking operation, meaning that your code
      * will reach the line after this only when crawling is finished.
      */
+	try  {
+	  BasicCrawler.output = new FileOutputStream( "new_owl.owl");     
+	} catch(Exception e) {
+			System.out.println("ERRRRRRRRRRRRRRRRRRRROOOOOOOOOOOORRRRR : writing on new_owl.owl");
+	}    
     controller.start(jokesMiningCrawler.BasicCrawler.class, numberOfCrawlers);
+    BasicCrawler.model.writeAll(BasicCrawler.output, "RDF/XML");
   }
 }
 
