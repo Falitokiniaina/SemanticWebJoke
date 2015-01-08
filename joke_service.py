@@ -16,11 +16,11 @@ class JokeGenerator(object):
         self.g = rdflib.Graph() 
         try:
             self.g.parse(rdf)
-            self.genres = self.getGenres()
-            print(self.genres)
         except:
             print("{0:s} is not a valid rdf file.".format(rdf))
             quit()
+        self.genres = self.getGenres()
+        print(self.genres)
 
     @cherrypy.expose
     def index(self):
@@ -94,7 +94,7 @@ class JokeGenerator(object):
         return sim
         
     def getGenres(self):
-        q = "SELECT ?name WHERE {{ ?genre a <http://www.semanticweb.org/joke_ontology#Genre>. ?genre joke-ontology:name ?name }}"
+        q = "SELECT ?name WHERE {{ ?genre a <http://www.semanticweb.org/joke_ontology#Genre>. ?genre jo:name ?name }}"
         r = self.g.query(q)
         cat = []
         for i in r:
@@ -102,7 +102,7 @@ class JokeGenerator(object):
         return cat
 
     def getJoke(self, genre):
-        q = "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/joke_ontology#TextJoke>. ?joke joke-ontology:content ?content. ?joke joke-ontology:hasGenre <http://www.semanticweb.org/joke_ontology#{0:s}> }}".format(genre)
+        q = "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/joke_ontology#TextJoke>. ?joke jo:content ?content. ?joke jo:hasGenre <http://www.semanticweb.org/joke_ontology#{0:s}> }}".format(genre)
         r = self.g.query(q)
         jokes = []
         for i in r:
