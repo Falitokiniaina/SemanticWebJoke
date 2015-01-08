@@ -29,20 +29,56 @@ class JokeGenerator(object):
         if not topic:
             return "Give me a topic, I'll tell you a joke!"
         similarity = {}
-        for gen in self.genres:
+        for genre in self.genres:
             #try an exact match
-            if topic.strip().lower() == gen.strip().lower():
-                similarity[gen] = 1
+            if topic.strip().lower() == genre.strip().lower():
+                similarity[genre] = 1
             #assign similarity based on wordnet
             else:
-                similarity[gen] = self.wordNetSimilarity(topic, gen)
+                max_sim = 0
+                for term in genre.split(' '):
+                    term_sim = self.wordNetSimilarity(topic, term)
+                    if term_sim > term_sim:
+                        max_sim = term_sim
+                similarity[genre] = max_sim
+        #get best genre for the user
         best_match = argmax(similarity)
         #log
         print("BEST MATCH: {0} {1} {2}".format(topic, best_match, similarity[best_match]))
         #output
         jokes = self.getJoke(best_match)
         joke = jokes[random.randint(0, len(jokes)-1)]
-        return "Here is a joke about <b>{0}</b>:<br/>{1}".format(best_match, joke)
+        #text to speech in chrome
+        #http://html5-examples.craic.com/google_chrome_text_to_speech.html
+        html_content = """
+        <html>
+            <head>
+                <link href="/css/style.css" rel="stylesheet">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+                <script >
+                    var voices = [];
+                    $(document).ready(function() {{
+                        var ischrome = navigator.userAgent.match(/chrome/i);
+                        if(ischrome) {{
+                            var u = new SpeechSynthesisUtterance({1});
+                            u.lang = 'en-US';
+                            u.pitch = 1;
+                            u.rate = 1;
+                            u.voice = voices[10];
+                            u.voiceURI = 'native';
+                            u.volume = 1;
+                            speechSynthesis.speak(u);
+                            console.log("Voice " + u.voice.name);
+                        }}
+                    }});
+                </script>
+            </head>
+            <body>
+                Here is a joke about <b>{0}</b>:
+                <div id='joke'>{1}</div>
+            </body>
+        </html>""".format(best_match, joke)
+        return html_content
 
     
     def wordNetSimilarity(self, term1, term2):
@@ -56,7 +92,7 @@ class JokeGenerator(object):
         return sim
         
     def getGenres(self):
-        q = "SELECT ?name WHERE {{ ?genre a <http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#Genre>. ?genre untitled-ontology-82:name ?name }}"
+        q = "SELECT ?name WHERE {{ ?genre a <http://www.semanticweb.org/joke_ontology#Genre>. ?genre untitled-ontology-82:name ?name }}"
         r = self.g.query(q)
         cat = []
         for i in r:
@@ -64,7 +100,7 @@ class JokeGenerator(object):
         return cat
 
     def getJoke(self, genre):
-        q = "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#TextJoke>. ?joke untitled-ontology-82:content ?content. ?joke untitled-ontology-82:hasGenre <http://www.semanticweb.org/marc/ontologies/2014/10/untitled-ontology-8#{0:s}> }}".format(genre)
+        q = "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/joke_ontology#TextJoke>. ?joke untitled-ontology-82:content ?content. ?joke untitled-ontology-82:hasGenre <http://www.semanticweb.org/joke_ontology#{0:s}> }}".format(genre)
         r = self.g.query(q)
         jokes = []
         for i in r:
