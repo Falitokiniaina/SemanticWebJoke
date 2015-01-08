@@ -17,6 +17,7 @@ class JokeGenerator(object):
         try:
             self.g.parse(rdf)
             self.genres = self.getGenres()
+            print(self.genres)
         except:
             print("{0:s} is not a valid rdf file.".format(rdf))
 
@@ -92,7 +93,7 @@ class JokeGenerator(object):
         return sim
         
     def getGenres(self):
-        q = "SELECT ?name WHERE {{ ?genre a <http://www.semanticweb.org/joke_ontology#Genre>. ?genre untitled-ontology-82:name ?name }}"
+        q = "SELECT ?name WHERE {{ ?genre a <http://www.semanticweb.org/joke_ontology#Genre>. ?genre joke-ontology:name ?name }}"
         r = self.g.query(q)
         cat = []
         for i in r:
@@ -100,7 +101,7 @@ class JokeGenerator(object):
         return cat
 
     def getJoke(self, genre):
-        q = "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/joke_ontology#TextJoke>. ?joke untitled-ontology-82:content ?content. ?joke untitled-ontology-82:hasGenre <http://www.semanticweb.org/joke_ontology#{0:s}> }}".format(genre)
+        q = "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/joke_ontology#TextJoke>. ?joke joke-ontology:content ?content. ?joke joke-ontology:hasGenre <http://www.semanticweb.org/joke_ontology#{0:s}> }}".format(genre)
         r = self.g.query(q)
         jokes = []
         for i in r:
@@ -116,5 +117,5 @@ def argmax(d):
         
         
 if __name__ == '__main__':
-    rdf_file = "jokeOntology_rdf_with_instances.owl"
+    rdf_file = "joke_ontology_rdf.owl"
     cherrypy.quickstart(JokeGenerator(rdf=rdf_file))
