@@ -107,13 +107,14 @@ class JokeGenerator(object):
         return cat
 
     def getJoke(self, genre):
-        q = "PREFIX jo:<http://www.semanticweb.org/joke_ontology#> " \
-            "SELECT ?content WHERE {{ ?joke a <http://www.semanticweb.org/joke_ontology#TextJoke> " \
-            ". ?joke jo:content ?content " \
-            ". ?joke jo:hasGenre ?genre "\
-            ". ?genre a <http://www.semanticweb.org/joke_ontology#genre> " \
-            ". ?genre jo:name '{0:s}' }}".format(genre)
-
+        q = "PREFIX jo:<http://www.semanticweb.org/joke_ontology#> "\
+            "SELECT ?content "\
+            "WHERE {{ "\
+            "?joke a <http://www.semanticweb.org/joke_ontology#TextJoke> ."\
+            "?genre a <http://www.semanticweb.org/joke_ontology#Genre> ."\
+            "?joke jo:content ?content ."\
+            "?joke jo:hasGenre ?genre ."\
+            "?genre jo:name '{0:s}' }}".format(genre)
         print(q)
         r = self.g.query(q)
         jokes = []
