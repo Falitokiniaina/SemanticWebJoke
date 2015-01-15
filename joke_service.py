@@ -52,23 +52,9 @@ class JokeGenerator(object):
         joke = jokes[random.randint(0, len(jokes)-1)]
         #text to speech in chrome
         #http://html5-examples.craic.com/google_chrome_text_to_speech.html
-        html_content = """
-        <html>
-            <head>
-                <link href="/css/style.css" rel="stylesheet">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-                <script >
-                    $(document).ready(function() {{
-                        var u = new SpeechSynthesisUtterance("{1}");
-                        window.speechSynthesis.speak(u);
-                    }});
-                </script>
-            </head>
-            <body>
-                Here is a joke about <b>{0}</b>:
-                <div id='joke'>{1}</div>
-            </body>
-        </html>""".format(best_match, joke)
+        html_content = """Here is a joke about : {0}\n
+        {1}
+        """.format(best_match, joke)
         return html_content
 
     

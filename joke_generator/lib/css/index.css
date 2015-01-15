@@ -1,0 +1,51 @@
+div.div_vertical_bar {
+   position: absolute;
+   bottom: 0;
+   top: 0;
+   left: 0;
+   width: 40px; /* A changer pour la largeur de ta barre */
+   background: #8C1515 repeat-y; /* image qui se répète verticalement */
+}
+div.div_tittle{
+	position: relative;	
+	left: 100px;
+	top:100px;
+	width:60%;
+	height:90px;
+	background:#8C1515;
+	opacity:0.3;
+	border-radius: 10px;
+}
+div.div_content{
+	position: relative;	
+	top:85px;
+	left: 100px;
+	width:65%;
+	height:300px;
+	background:#CCCCCC;
+	opacity:0.5;
+	border-radius: 10px;
+	box-shadow: 1px 1px 20px #555;
+}
+#lb_title{
+	position:relative;
+	left:150px;
+	top:25px;
+	opacity:1;
+	font-size:30px;
+	color:#FFFFFF;
+	text-shadow: 2px 2px 9px #000;
+}
+#fl_content{
+	position:relative;
+	padding-top:40px;
+	padding: 50px;
+	border:none;
+	opacity:1;	
+}
+body{
+	font-size: 62.5%;	
+}
+label{
+	font-weight:bold;
+}
