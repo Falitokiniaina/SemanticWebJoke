@@ -9,11 +9,17 @@
 <script src="lib/js/jquery-ui.js"></script>
   <script>
 (function($){
-	clk_bt_read = function(){
-		var msg = new SpeechSynthesisUtterance($("#txt_joke").val());
+	clk_bt_read = function(){		
+		clk_bt_stop_read();
+		var msg = new SpeechSynthesisUtterance();
+		var voices = window.speechSynthesis.getVoices();
+		msg.voice = voices[$("#slc_num_voice").val()]; // Note: some voices don't support altering params
+		msg.text = $("#txt_joke").val();
+		msg.lang = 'en-US';
 	    window.speechSynthesis.speak(msg);		
 	};
 	clk_generate = function(){
+			clk_bt_stop_read();
 			if($("#in_joke_about").val() == ""){
 				alert('Enter any topic of joke.');
 				$("#in_joke_about").focus();
@@ -24,11 +30,20 @@
 					url:"generate_joke.php?topic="+$("#in_joke_about").val(),
 					success : function(html){
 								$("#txt_joke").val(html);
-								if($('#chbx_auto_read').is(':checked'))
+								if($('#chbx_auto_read').is(':checked') && $("#txt_joke").val().length <= 350)
 									clk_bt_read();
 					},
 				});
 			}
+	};
+	key_up_joke = function(e){
+					if(e.keyCode == 13){
+						$("#bt_generate").focus();
+						clk_generate();
+					}
+	};	
+	clk_bt_stop_read = function(){
+			 window.speechSynthesis.cancel();
 	};
 })(jQuery)  
   	$(document).ready(function(e) {
@@ -36,8 +51,10 @@
 			source: 'get_category.php',
 			max:3
 		});  
-		$("#bt_generate").click(clk_generate);
-		$("#bt_read").click(clk_bt_read);
+		$("#in_joke_about").keyup(key_up_joke);				
+		$("#bt_generate").click(clk_generate);		
+		$("#bt_stop_read").click(clk_bt_stop_read);
+		$("#bt_read").click(clk_bt_read);		
 	});
   </script>
 </head>
@@ -55,6 +72,13 @@
         <br /><br />
         <textarea cols="75" rows="10" id="txt_joke"></textarea><br />
         <input type="checkbox" name="chbx_auto_read" id="chbx_auto_read" checked=checked /><label for="chbx_auto_read">Auto read</label>
+        <select name="slc_num_voice" id="slc_num_voice">
+        	<option value="1">Man</option>
+            <option value="0">Woman 1</option>
+            <option value="2">Woman 2</option>
+            <option value="3">Woman 3</option>            
+        </select>
+        <input type="button" value="Stop reading" name="bt_stop_read" id="bt_stop_read" />
     </fieldset>
 </div>
 </html>

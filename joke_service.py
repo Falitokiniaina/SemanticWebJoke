@@ -7,6 +7,7 @@ import rdflib
 
 #test it!
 #http://127.0.0.1:8080/generate?topic=insults
+#http://127.0.0.1:8080/get_genres
 
 class JokeGenerator(object):
     
@@ -53,10 +54,17 @@ class JokeGenerator(object):
         #text to speech in chrome
         #http://html5-examples.craic.com/google_chrome_text_to_speech.html
         html_content = """Here is a joke about : {0}\n
+        Author : 'Central Comedy'\n
         {1}
         """.format(best_match, joke)
         return html_content
 
+    @cherrypy.expose
+    def get_genres(self):
+        list_genres = []
+        for genre in self.genres:
+            list_genres.append(genre.strip().lower())
+        return "{0}".format(list_genres)
     
     def wordNetSimilarity(self, term1, term2):
         #http://www.nltk.org/howto/wordnet.html

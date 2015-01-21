@@ -1,4 +1,5 @@
 <?php
+/*
 echo '["Insults",
       "Animals",
       "Police",
@@ -9,4 +10,6 @@ echo '["Insults",
       "Child",
       "Adult"
     ]';
+*/
+echo str_replace("'","\"",file_get_contents("http://127.0.0.1:8080/get_genres"));
 ?>
