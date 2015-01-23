@@ -18,7 +18,7 @@ in new_owl.owl. In the web service is run the SPARQL. So just
     With google Chrome, go to http://localhost:<your_apache_port>/joke_generator/index_joke.php
   3) Have fun.
 
-January 22, 2015
+January 22, 2015,
 Marcello Benedetti <4marcello@gmail.com>
 Falitokiniaina Rebearison <r.falitokiniaina@gmail.com>
   
